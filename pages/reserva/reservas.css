@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    color: var(--color-marrom-escuro);
 }
 
 body {
@@ -21,7 +22,6 @@ button {
 
     background-color: white;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.678);
-    
 }
 
 p {
@@ -67,6 +67,8 @@ input {
     border-bottom: 2px solid var(--color-marrom-escuro);
     outline: none;
 
+    background-color: white;
+
     margin-bottom: 1rem;
     padding-left: 2rem;
 }
@@ -77,6 +79,7 @@ input[type="date"]{
 
 .input_icons {
     position: relative;
+    margin-top: 1rem;
 }
 
 i {
@@ -123,8 +126,9 @@ i {
     margin: .3rem;
 
     font-size: 16px;
-    border: 1px solid black;
-
+    border-bottom: 2px solid var(--color-marrom-escuro);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0);
+    border-radius: 0;
 }
 div#horario_almoco, div#horario_jantar {
     display: grid;
@@ -160,7 +164,7 @@ div#horario_almoco, div#horario_jantar {
     width: 300px;
 }
 .borda-horario {
-    border: 3px solid var(--color-bege);
+    border-bottom: 3px solid var(--color-bege);
 }
 
 .pop_up_on {
