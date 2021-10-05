@@ -1,0 +1,19 @@
+body{
+    background-image: url("https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2021/05/12141735/Patati-Patata.jpg");
+    background-position: top;
+    background-size: 112vw;
+    background-repeat: no-repeat;
+}
+
+table, td, tr{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+td{
+    color: white;
+    font-size: 20px;
+}
+
+table{
+    text-align: center;
+}
