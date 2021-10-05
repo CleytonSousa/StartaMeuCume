@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    background-color: #ffeb99;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+#container-left{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+#container-right{
+    margin-left: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,-50%);
+}
+
+input, button{
+    border: none;
+    outline: none;
+    color: black;
+    width: 100%;
+    font-size: 18px;
+    padding: 5px 0;
+    border-bottom: 2px solid rgb(134, 66, 42);
+}
+
+button{
+    color: rgb(22, 22, 22);
+    background-color: rgb(134, 66, 42);
+}
