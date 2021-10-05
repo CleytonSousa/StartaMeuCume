@@ -1,0 +1,16 @@
+
+@media (min-width:300px) and (max-width:1800px){
+    body{
+        background-color: var(--color-bege);
+    }
+    #container-right{
+       margin-top: 5vh;
+    }
+    #container-principal{
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    
+}
