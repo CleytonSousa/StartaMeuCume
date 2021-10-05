@@ -49,7 +49,7 @@ body{
 
 .logo{
     width: 20vw;
-    margin-top: 50px;
+    margin-top: 5vh;
 }
 
 .intro{
@@ -186,14 +186,18 @@ form input[type="submit"]:hover{
 @media (max-width: 602px) {
     body{
         flex-direction: column;
+        gap: 10vh;
+        overflow: visible;
     }
 
     .intro{
         width: 100vw;
-        height: 40vh;
+        margin-top: 35vh;
+        height: 42vh;
     }
+    
     .intro h1, h3{
-        width: 70vw;
+        width: 80vw;
     }
 
     .intro h3{
@@ -208,4 +212,7 @@ form input[type="submit"]:hover{
         padding: 0;
     }
 
+    .getInfosUser{
+        min-height: 90vh;;
+    }
 }
