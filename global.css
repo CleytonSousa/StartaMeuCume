@@ -1,0 +1,11 @@
+/* global */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/* color */
+:root {
+    --color-marrom-claro: #B47110;
+    --color-marrom-escuro: #502600;
+    --color-bege: #ECCC74;
+    --color-bege-white: #FFEB99;   
+}
