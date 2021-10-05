@@ -4,6 +4,7 @@
     border: 0;
     box-sizing: border-box;
     outline: none;
+    font-family: 'Poppins', sans-serif;
 }
 
 #cleanBtn{
@@ -27,7 +28,7 @@ body{
     align-items: center;
     justify-content: center;
     overflow: hidden;
-	background: linear-gradient(to left, #ddbd64, rgb(255, 166, 0), rgba(255, 166, 0, 0.822));
+	background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege), var(--color-bege-white));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
@@ -117,7 +118,7 @@ form .input-field{
 
 form input[type="submit"]{
     padding: 0.4rem;
-    background: #502600;
+    background: var(--color-marrom-escuro);
     cursor: pointer;
     color: white;
     font-size: 0.9rem;
@@ -129,7 +130,6 @@ form input[type="submit"]{
 
 form input[type="button"]{
     padding: 0.4rem;
-    background: linear-gradient(to left, red, rgb(238, 61, 61));
     cursor: pointer;
     color: white;
     font-size: 0.9rem;
@@ -141,12 +141,11 @@ form input[type="button"]{
 
 form input[type="button"]:hover{
     letter-spacing: 0.5px;
-    background: linear-gradient(to right, rgb(235, 15, 15), #ff3838);
 }
 
 form input[type="submit"]:hover{
     letter-spacing: 0.5px;
-    background: linear-gradient(to right, #502600, #ce660b);
+    background: linear-gradient(to right, var(--color-marrom-escuro), var(--color-marrom-claro));
 }
 
 .input-field .underline::before{
@@ -197,7 +196,7 @@ form input[type="submit"]:hover{
     }
     
     .intro h1, h3{
-        width: 80vw;
+        width: 100vw;
     }
 
     .intro h3{
