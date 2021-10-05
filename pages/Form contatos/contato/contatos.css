@@ -3,7 +3,6 @@
     padding: 0;
     border: 0;
     box-sizing: border-box;
-    font-family: sans-serif, "Poppins", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     outline: none;
 }
 
@@ -18,6 +17,7 @@
 }
 textarea{
     resize: none;
+    max-width: 280px;
 }
 
 body{
@@ -48,18 +48,19 @@ body{
 }
 
 .logo{
-    width: 40vw;
-    margin-top: -50px;
+    width: 20vw;
+    margin-top: 50px;
 }
 
 .intro{
     width: 50%;
     text-align: center;
-    height: 95vh;
+    height: 100vh;
+    margin-top: 120px;
 }
 
 .intro h1, h3{
-    width: 25vw;
+    width: 30vw;
     text-align: center;
     margin: 0 auto;
 }
@@ -174,6 +175,14 @@ form input[type="submit"]:hover{
     transform: scaleX(1);
 }
 
+
+@media (min-width:1800px) {
+    .intro{
+        margin-top: 38vh;
+    }
+}
+
+
 @media (max-width: 602px) {
     body{
         flex-direction: column;
@@ -181,6 +190,7 @@ form input[type="submit"]:hover{
 
     .intro{
         width: 100vw;
+        height: 40vh;
     }
     .intro h1, h3{
         width: 70vw;
@@ -191,6 +201,11 @@ form input[type="submit"]:hover{
     }
     body{
         height: 120vw;
+    }
+
+    h1{
+        margin: 0;
+        padding: 0;
     }
 
 }
