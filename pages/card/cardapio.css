@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #502600;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ECCC74;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    margin: 0 auto;
+}
+li {
+    list-style-type: none;
+    margin-bottom: 0.5vh;
+    font-size: 18px;
+    font-weight: 550;
+    width: 9.2vw;
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #502600;
+}
+form {
+    margin: 1%;
+}
+
+/* globais */
+
+#main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#comentArea {
+    width: 28vw;
+    margin: 0 auto;
+}
+#textcoment{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 6vh;
+    border-top: solid 4px black;
+}
+#textAreaFlex {
+    display: flex;
+}
+
+#comentario {
+    font-size: 20px;
+}
+#coment {
+    margin-top: 1vh;
+}
+#coment-btn{
+    margin-right: 10vw;
+    height: 25px;
+    margin: 0;
+    margin-top: 7.8vh;
+    margin-left: 1vw;
+}
+
+#logo {
+    width: 700px;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+}
+#contLogo {
+    display: flex;
+    justify-content: center;
+}
+#infos {
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    margin-left: 12vw;
+    margin: 0 auto;
+}
+#about {
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 7vh;
+}
+.icon {
+    margin-top: 5vh;
+}
+#siganos {
+    display: flex;
+    justify-content: space-around;
+}
+.contactEmail {
+    margin: 5%;
+}
+#siganos > h3 {
+    margin: 5%;
+}
+#aboutDois {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+#contborder {
+    text-align: center;
+    margin-bottom: 1vh;
+    border-bottom: 6px solid black;
+    width: 43vw;
+}
+#direitap {
+    margin: 2%;
+}
+#comidas {
+   display: flex;
+   justify-content: space-around;
+   width: 85vw;
+   margin: 0 auto;
+}
+.card {
+    margin: 2%;
+}
+.card > h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.5vh;
+}
+.pratos {
+    font-size: 24px;
+    margin-bottom: 0.5vh;
+    font-weight: bold;
+}
+.precoPratos {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+/*CARROSSEL*/
+
+#maisPop {
+    width: 20vw;
+    height: 40vh;
+    border: black solid 1px;
+}
+
+ /* POP UPS */ 
+
+ #popUpUm {
+     width: 26vw;
+     height: 40vh;
+     background-color: whitesmoke;
+     position: fixed;
+     top: 30vh;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: 0 auto;
+     display: none;
+ }
+ .fecharPopUpUm {
+     text-align: right;
+ }
+
+
+
+
+/* responsividade */
+
