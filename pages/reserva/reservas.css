@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: var(--color-bege);
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -14,28 +18,28 @@ button {
     cursor: pointer;
     border: none;
     border-radius: .5rem;
+
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.678);
+    
 }
 
 p {
     color: #c92a2a;
 }
-/*----- header -----*/
-header {
-    text-align: center;
-    background-color: #c9842a;
-}
 
-header img {
-    width: 50vw;
-}
+
 /*----- main -----*/
 main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
-    height: 100vh;
-    background-color: #c9842a;
+    margin-top: 1rem;
+
+    gap: 5rem;
+
+    height: 110vh;
 }
 
 form {
@@ -43,6 +47,7 @@ form {
     margin: 1rem;
     padding: 1rem;
     border-radius: 12px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.678);
 }
 
 .title {
@@ -63,10 +68,27 @@ input {
     outline: none;
 
     margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+input[type="date"]{
+    padding-left: .5rem;
 }
 
 input:focus {
-    border: 2px solid #2ac96c;
+    border: 2px solid var(--color-marrom-escuro);
+}
+
+.input_icons {
+    position: relative;
+}
+
+i {
+    position: absolute;
+    top: 32px;
+    left: 8px;
+
+    color: var(--color-marrom-escuro);
 }
 
 /* buttons */
@@ -86,9 +108,17 @@ input:focus {
     background-color: #2ac96c;
 }
 
+#pop_up_salvar div {
+    max-width: 400px;
+}
+
 /* finalizar */
 #pop_up_salvar p {
-    color: #2ac96c;
+    color: var(--color-marrom-escuro);
+}
+
+#pop_up_salvar span {
+    color: var(--color-marrom-escuro);
 }
 /* ----- horário ----- */
 .horario {
@@ -113,12 +143,14 @@ div#horario_almoco, div#horario_jantar {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    border-radius: 12px;
 }
 
 .pop-up  > div > button {
     width: 100px;
     height: 30px;
-    border: 2px solid rgb(79, 183, 224);
+    border: 2px solid var(--color-bege);
 }
 
 /* cancelar */
@@ -132,7 +164,7 @@ div#horario_almoco, div#horario_jantar {
     width: 300px;
 }
 .borda-horario {
-    border: 3px solid rgb(79, 224, 79);
+    border: 3px solid var(--color-bege);
 }
 
 .pop_up_on {
@@ -157,6 +189,6 @@ div#horario_almoco, div#horario_jantar {
 /*responsive - mobile*/
 @media(max-width:  1024px){
     main {
-        height: 126vh;
+        height: 130vh;
     }
 }

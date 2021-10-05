@@ -31,7 +31,7 @@
 
                 <p id="verificar_data" class="check"></p>
 
-                <h3>Hora</h3>
+                <h3>Horário</h3>
                 <label for="">Almoço</label>
                 <div id="horario">
                     <div id="horario_almoco">
@@ -53,18 +53,27 @@
                     <p id="verificar_horario" class="check"></p>
                 </div>
 
-                <label for="numero_de_pessoas">Número de pessoas</label>
-                <input type="number" name="numero_de_pessoas" id="numero_de_pessoas" min="1">
+                <div class="input_icons">
+                    <label for="numero_de_pessoas">Número de pessoas</label>
+                    <i class="fas fa-users"></i>
+                    <input type="number" name="numero_de_pessoas" id="numero_de_pessoas" min="1">
+                </div>
                 <p id="verificar_numero_de_pessoas" class="check"></p>
             </section>
 
             <section id="contato_principal">
                 <h2 class="title">Contato Principal</h2>
                 
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <div class="input_icons">
+                    <label for="nome">Nome</label>
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="input_icons">
+                    <label for="email">Email</label>
+                    <i class="fas fa-envelope-open"></i>
+                    <input type="email" name="email" id="email">
+                </div>
                 <p id="verificar_nome_e_email" class="acheck"></p>
             </section>
             <div id="finalizar">
@@ -95,5 +104,8 @@
 
     <!-- script -->
     <script src="reservas.js"></script>
+
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/507fbc386a.js" crossorigin="anonymous"></script>
 </body>
 </html>
