@@ -39,6 +39,11 @@ i{
     color: var( --color-marrom-escuro);
 }
 
+/* Campos vazios */
+.obs{
+    color: brown;
+}
+
 input, button{
     background: none;
     border: none;
@@ -52,6 +57,28 @@ input, button{
 button{
     color: var(--color-bege-white);
     background-color: var(--color-marrom-escuro);
+    border-bottom: 0%;
+}
+
+/* hover btn */
+button:hover{
+    border-bottom: 100%;
+    transition: border-bottom 0.3s ease-in;
+    border-bottom: 3px solid var(--color-marrom-claro);
+    cursor: pointer;
+}
+input:visited{
+    background: none;
+}
+
+/*  */
+#esqueceuSenha{
+    margin-top: 4%;
+    cursor: help;
+}
+
+#cliqueAqui{
+    cursor: pointer;
 }
 
 footer{
