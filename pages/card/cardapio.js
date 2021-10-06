@@ -3,6 +3,7 @@ const italico = document.querySelectorAll(".pratos")
 const popUp = document.querySelector("#popUpUm")
 const fechar = document.querySelectorAll(".fecharPopUpUm")
 const negrito = document.querySelector(".contactEmail")
+const maiusculo = document.querySelectorAll(".hPratos")
 
 
 details.forEach(function(details){
@@ -40,4 +41,3 @@ negrito.addEventListener("mouseout", function(event) {
     event.target.style.fontSize = "";
     event.target.style.fontWeight = "";
   }); // retirar mouse no link
-
