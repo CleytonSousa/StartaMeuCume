@@ -18,11 +18,11 @@ body{
     align-items: center;
 }
 
-/* #container-left{
-    
+#container-left{
+    padding-left: 110px;
 }
 
-#container-right{
+/*#container-right{
     
 } */
 
@@ -35,7 +35,7 @@ body{
 }
 
 i{
-    width: 1.5vw;
+    width: 20px;
     color: var( --color-marrom-escuro);
 }
 
@@ -44,13 +44,27 @@ i{
     color: brown;
 }
 
+#titulo{
+    color: var(--color-marrom-escuro);
+    text-align: center;
+    font-size: 30px;
+}
+
+#container-formulario{
+    width: 400px;
+    padding: 8%;
+    background: white;
+    box-shadow: 2px 2px 1px 1px var(--color-marrom-escuro);
+    border-radius: 5%;
+}
+
 input, button{
     background: none;
     border: none;
     outline: none;
     color: black;
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     padding: 5px 0;
 }
 
@@ -75,6 +89,7 @@ input:visited{
 #esqueceuSenha{
     margin-top: 4%;
     cursor: help;
+    font-size: 20px;
 }
 
 #cliqueAqui{

@@ -1,10 +1,13 @@
 
-@media (min-width:300px) and (max-width:1800px){
+@media (min-width:100px) and (max-width:1800px){
     body{
         background-color: var(--color-bege);
     }
     #container-right{
        margin-top: 5vh;
+    }
+    #container-left{
+        padding-left: 10%;
     }
     #container-principal{
         display: flex;
@@ -13,4 +16,25 @@
     }
    
     
+}
+
+@media (min-width:400px) and (max-width:900px) {
+    #container-formulario{
+        width: 300px;
+    }
+}
+
+@media (min-width:100px) and (max-width:400px) {
+    #titulo{
+        font-size: 20px;
+    }
+    #container-formulario{
+        width: 200px;
+    }
+    input, button{
+        font-size: 15px;
+    }
+   #esqueceuSenha{
+    font-size: 13px;
+   }
 }
