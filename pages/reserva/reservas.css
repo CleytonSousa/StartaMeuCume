@@ -18,7 +18,6 @@ body::-webkit-scrollbar {
 button {
     cursor: pointer;
     border: none;
-    border-radius: .5rem;
 
     background-color: white;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.678);
@@ -33,13 +32,13 @@ p {
 main {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
     margin-top: 1rem;
 
     gap: 5rem;
 
-    height: 110vh;
+    height: 100vh;
 }
 
 form {
@@ -47,7 +46,7 @@ form {
     margin: 1rem;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.678);
+    box-shadow: 2px 2px 1px 1px var(--color-marrom-escuro);
 }
 
 .title {
@@ -104,7 +103,7 @@ i {
 }
 
 #salvar {
-    background-color: #2ac96c;
+    background-color: var(--color-marrom-escuro);
 }
 
 #pop_up_salvar div {
@@ -190,5 +189,9 @@ div#horario_almoco, div#horario_jantar {
 @media(max-width:  1024px){
     main {
         height: 130vh;
+        flex-direction: column;
+    }
+    main #image {
+        display: none;
     }
 }
