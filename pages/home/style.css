@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-body{
+*{
     margin: 0;
     padding: 0;
+}
+body{
     background-color: #FFEB99;
     font-family: 'Poppins', sans-serif;
 }
@@ -13,16 +15,17 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 20vh;
+    height: 22vh;
     background-color: #ECCC74;
 }
 
 #logomarca{
+    margin: 2vh;
     width: 45vw;
 }
 
 nav{
-    margin-top: -8vh;
+    margin-top: -11vh;
     margin-left: 45vw;
 }
 
@@ -32,7 +35,7 @@ nav{
 }
 
 .menu{
-    margin-left: 1.5vw;
+    margin-left: 2vw;
     font-size: 3vh;
     text-transform: uppercase;
 }
@@ -49,19 +52,25 @@ a{
     width: 70vw;
 }
 
+h2{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 #section-icons{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .icones{
-    margin: 2vw 5vw;
-    width: 4vw;
+    margin: 2vh 2vw 0.1vh 1vw;
+    width: 3.5vw;
 }
 
 footer{
+    padding: 0;
     width: 100%;
-    height: 10vh;
     bottom: 0;
     right: 0;
     text-align: center;
@@ -69,6 +78,6 @@ footer{
 }
 
 #rodape{
-    padding: 3.5vh;
-    font-size: 2vh;
+    padding: 3vh;
+    font-size: 1.5vh;
 }
