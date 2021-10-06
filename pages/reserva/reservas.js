@@ -103,7 +103,7 @@ function popUp(alerta, arrayDataInformada){
 };
 
 function mensagemDeErro() {
-    document.getElementById("virificar_todos_os_dados").textContent = "Por favor verifique se todos os dados foram preenchidos corretamente.";
+    document.getElementById("virificar_todos_os_dados").textContent = "Por favor verifique se todos as informações foram preenchidos corretamente.";
 };
 
 function limparMensagemDeErro() {
