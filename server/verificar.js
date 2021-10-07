@@ -7,9 +7,15 @@ function verify(){
     let assunto = document.getElementById('assunto').value
     let mensagem = document.getElementById('mensagem').value
 
+
+    /*
+     nome: /^[\w\s]+$/,
+    telefone: /^[\d\s]+$/,
+    email: /^[^@]+@[^@]+\.[^@]+/
+    */
 //verificar se todos foram preenchidos
     if(name == ""){
-        alert("Erro, nome mal definido!")
+        alert("Erro, nome mal definido! é necessario ao menos um nome com 3 letras")
         return
     } else if(email == ""){
         alert("Erro, email mal definido")

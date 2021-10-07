@@ -13,21 +13,33 @@
     <link rel="stylesheet" href="contatos.css">
 </head>
 <body>
+
+    <nav>
+        <img src="/images Global/text_end_logo.svg" alt="logo">
+        <ul>
+            <li><a href="">Cardápio</a></li>
+            <li><a href="">Pratos populares</a></li>
+            <li><a href="">Reservas</a></li>
+            <li><a href="">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main>
         <div class="intro animate__animated animate__backInDown">
-            <img class="logo animate__animated" src="../../../images Global/text_end_logo_break.svg" alt="">
+            <img class="logo animate__animated" src="/images Global/text_end_logo_break.svg" alt="">
             <h1>Alguma duvida, elogio ou problema? <br> <span style="color: rgb(255, 0, 0);">entre em contato!</span></h1>
             <h3>Fale conosco, estamos a total disposição!</h3>
         </div>
-        <div class="getInfosUser animate__animated animate__flip">
+        <div class="getInfosUser animate__animated animate__fadeIn">
             <h2>Entre Em Contato! <i class="fas fa-mobile-alt"></i></h2>
             <form onsubmit="fazerContato()" method="dialog">
                 <div class="input-field">
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome" ><br>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome"><br>
                     <div class="underline"></div>
                 </div>
     
                 <div class="input-field">
-                    <input type="email" name="email" id="email"  placeholder="Digite seu email">
+                    <input  name="email" id="email"  placeholder="Digite seu email">
                     <div class="underline"></div>
                 </div>
     
@@ -51,8 +63,19 @@
                 </div>
             </form>
         </div>
+    </main>
+
+    <footer>
+        <section class="social-icons">
+            <i class="fab fa-telegram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+        </section>
+        <p>Desenvolvido por Barbaha, Thayza, Matheus, <b>Cleyton</b>, Italo e Camila para START</p>
+    </footer>
 <script src="https://kit.fontawesome.com/2bb5085f08.js" crossorigin="anonymous"></script>
-<script src="../../server/verificar.js"></script>
-<script src="../../server/server.js"></script>
+<script src="/server/verificar.js"></script>
+<script src="/server/server.js"></script>
 </body>
 </html>

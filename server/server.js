@@ -1,4 +1,4 @@
-let apiId = "123456789"
+let apiId = "" //"051dc57bd39347eaa2068fa743cafade"
 
 function fazPost(url, body){
     console.log("Body= ", body)
