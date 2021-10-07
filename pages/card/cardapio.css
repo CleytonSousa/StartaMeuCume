@@ -119,13 +119,71 @@ form {
 .logoGlob {
     width: 60px;
 }
+.bold {
+    font-weight: bold;
+}
+
+
+/* TUDO AQUI SERÁ O TESTE PRA QUANDO ADICIONAR A FUNCAO JS JA EXISTIR O PADRAO */
+
+#infos {
+    display: flex;
+    justify-content: space-around;
+    width: 43vw;
+    margin: 0 auto; 
+}
+
+#testandoImg {
+    border-radius: 8px;
+    margin: 5%;
+    
+}
+#infosComida {
+    margin: 1%;
+}
+#infosComida p {
+    margin-bottom: 1.5vh;
+}
+
+
+
 
 /* POP UP*/
-#popUp {
-    width: 30vw;
-    height: 30vh;
+.popUp {
+    width: 50vw;
+    height: 50vh;
     background-color: #B47110;
+    position: fixed;
+    left: 500;
+    bottom: 270;
     display: none;
+    border-radius: 10px;
+}
+#nomeComida {
+    margin: 2.5%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closePop{
+    text-align: right;
+    margin: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+#imgTest {
+    width: 99.6vw;
+    margin-top: -3vh;
+    margin-bottom: 5vh;
+}
+.logoComida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+#imgCont {
+    width: 65px;
 }
 
 
