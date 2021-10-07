@@ -5,6 +5,7 @@ const reservas = document.getElementById("reservas");
 const contatos = document.getElementById("contatos");
 
 
+
 // validação das páginas
 
 
@@ -120,6 +121,3 @@ contatos.addEventListener("mouseout", () =>{
     contatos.style.fontWeight = ""
     contatos.style.borderBottom = ""
 })
-
-
-
