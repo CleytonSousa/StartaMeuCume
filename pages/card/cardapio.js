@@ -1,43 +1,35 @@
-const details = document.querySelectorAll("li")
-const italico = document.querySelectorAll(".pratos")
-const popUp = document.querySelector("#popUpUm")
-const fechar = document.querySelectorAll(".fecharPopUpUm")
+const border = document.querySelectorAll(".pratos")
 const negrito = document.querySelector(".contactEmail")
 const maiusculo = document.querySelectorAll(".hPratos")
+const pop = document.getElementById('popUp')
 
 
-details.forEach(function(details){
-    details.addEventListener("click", () => {
-        popUp.style.display = "block"
+border.forEach(function(border){
+    border.addEventListener("click", () => {
+           pop.appendChild(pop)
     })
-}) // aparecer o popUp pratos
 
-fechar.forEach(function(fechar){
-    fechar.addEventListener("click", () => {
-        popUp.style.display = "none"
-    })
-}) // fechar popUP
-
-italico.forEach(function(italico){
-    italico.addEventListener("mouseover", () => {
-        italico.style.fontStyle = "italic";
-        italico.style.fontSize = "30px"
+})
+border.forEach(function(border){
+    border.addEventListener("mouseover", () => {
+        border.style.borderBottom = "3px solid #B47110";
+        border.style.fontStyle = "italic";
     } )
 }) // passar mouse nos pratos
 
-italico.forEach(function(italico){
-    italico.addEventListener("mouseout", () => {
-        italico.style.fontStyle = "";
-        italico.style.fontSize = ""
+border.forEach(function(border){
+    border.addEventListener("mouseout", () => {
+        border.style.borderBottom = "";
+        border.style.fontStyle = ""
     } )
 }) // retirar mouse pratos
 
 negrito.addEventListener("mouseenter", function(event) {
-    event.target.style.fontSize = "30px";
+    event.target.style.borderBottom = "3px solid #B47110";
     event.target.style.fontWeight = "bold";
   }); // passar mouse no link
   
 negrito.addEventListener("mouseout", function(event) {
-    event.target.style.fontSize = "";
+    event.target.style.borderBottom = "";
     event.target.style.fontWeight = "";
   }); // retirar mouse no link
