@@ -31,6 +31,9 @@ a {
 form {
     margin: 1%;
 }
+span {
+    font-weight: bold;
+}
 
 /* globais */
 
@@ -206,7 +209,7 @@ form {
 
 nav{
     margin-top: -11vh;
-    margin-left: 45vw;
+    margin-left: 50vw;
 }
 
 .menu, ul, li{
@@ -215,9 +218,8 @@ nav{
 }
 
 .menu{
-    margin-left: 2vw;
+    margin-left: 1vw;
     font-size: 3vh;
-    text-transform: uppercase;
 }
 
 a{
