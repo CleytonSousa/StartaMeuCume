@@ -9,7 +9,18 @@
 
 html{
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
+
+/* MENSAGEM DE ERRO DOS INPUTS */
+
+#erroMsgEmail, #erroMsgName, #erroMsgNumber, #erroMsgAssunto, #erroMsgMensagem{
+    color: red;
+    font-size: 12px;
+}
+
+/* FIM DAS MENSAGENS DE ERRO */
 
 #cleanBtn{
     margin-top: 5px;
@@ -30,6 +41,7 @@ body{
   height: 100vh;
 }
 
+/* heander */
 nav{
     display: flex;
     background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege));
@@ -56,8 +68,23 @@ ul li a{
     text-decoration: none;
     color: black;
     padding: 0 10px;
+    padding: 0 15px;
 }
 
+ul li a:hover{
+    border-bottom: 2px solid var(--color-marrom-escuro);
+}
+
+ul li a:active{
+    color: var(--color-marrom-claro);
+}
+
+.my-home{
+    border-bottom: 2px var(--color-marrom-escuro) solid;
+}
+/* header fim */
+
+/* Body => main */
 main{
     display: flex;
     min-height: 100vh;
@@ -69,6 +96,14 @@ main{
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
+}
+
+.logoHeaderResp{
+    display: none;
+}
+
+.social-icons:hover{
+
 }
 
 /*Animations*/
@@ -89,6 +124,11 @@ main{
     width: 20vw;
     margin-top: 15vh;
     max-width: 250px;
+    margin-bottom: 15px;
+}
+
+.logoResp{
+    display: none;
 }
 
 .intro{
@@ -98,19 +138,20 @@ main{
 }
 
 .intro h1, h3{
-    width: 30vw;
+    width: 40vw;
     text-align: center;
     margin: 0 auto;
+    font-size: 30px;
 }
 
 .getInfosUser{
     background: rgb(255, 255, 255);
     max-width: 350px;
-    min-height: 30vh;
+    height: auto;
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
     border-radius: 8px;
-    margin: -80px 0 0 0;
+    margin-top: -50px;
 }
 
 .getInfosUser h2{
@@ -211,6 +252,15 @@ form input[type="submit"]:hover{
     transform: scaleX(1);
 }
 
+input:invalid{
+    box-shadow: 0 0 2px 2px rgb(255, 0, 0);
+    border-radius: 5px;
+}
+
+input:focus:invalid{
+    box-shadow: none;
+}
+
 footer{
     text-align: center;
     margin: 0 auto;
@@ -225,23 +275,66 @@ footer i{
     padding: 0 15px;
 }
 
-@media (min-width:1800px) {
-    .intro{
-        margin-top: 38vh;
-    }
-}
 
 
 @media (max-width: 602px) {
-    main{
+    main {
         display: block;
+        height: 130vh;
+    }
+
+    .intro{
+        height: 19vh;
+        width: 100vw;
+        margin-top: 15px;
     }
 
     .intro h1, h3{
         width: 100vw;
+        font-size: 15px;
+    }
+   
+    .logo{
+        /* margin: 15px 0; */
+        display: none;
     }
 
-    .logo{
-        margin: 15px auto;
+    .logoResp{
+        display: block;
+        width: 50vw;
+        margin: auto;
+    }
+
+    .logoHeader{
+        display: none;
+    }
+
+    .logoHeaderResp{
+        display: block;
+        width: 15vw;
+    }
+
+    .getInfosUser{
+       width: auto;
+       margin: auto;
+       
+    }
+
+    textarea{
+        height: 20px;
+        width: 250px;
+    }
+
+    #erroMsgEmail, #erroMsgName, #erroMsgNumber, #erroMsgAssunto, #erroMsgMensagem{
+        font-size: 10px;
+
+    }
+
+    footer{
+        height: auto;
+    }
+
+    #erroMsgMensagem{
+        display: none;
     }
 }

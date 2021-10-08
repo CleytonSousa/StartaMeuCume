@@ -9,24 +9,29 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="contatos.css">
 </head>
 <body>
 
     <nav>
-        <img src="/images Global/text_end_logo.svg" alt="logo">
+        <img class="logoHeader" src="/images Global/text_end_logo.svg" alt="logo">
+        <img class="logoHeaderResp" src="/images Global/logo.svg" alt="logo">
         <ul>
             <li><a href="">Cardápio</a></li>
             <li><a href="">Pratos populares</a></li>
             <li><a href="">Reservas</a></li>
-            <li><a href="">Contatos</a></li>
+            <li><a class="my-home" href="">Contatos</a></li>
         </ul>
     </nav>
 
     <main>
         <div class="intro animate__animated animate__backInDown">
             <img class="logo animate__animated" src="/images Global/text_end_logo_break.svg" alt="">
+            <img class="logoResp animate__animated" src="/images Global/text_end_logo.svg" alt="">
             <h1>Alguma duvida, elogio ou problema? <br> <span style="color: rgb(255, 0, 0);">entre em contato!</span></h1>
             <h3>Fale conosco, estamos a total disposição!</h3>
         </div>
@@ -34,32 +39,37 @@
             <h2>Entre Em Contato! <i class="fas fa-mobile-alt"></i></h2>
             <form onsubmit="fazerContato()" method="dialog">
                 <div class="input-field">
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome"><br>
+                    <input onblur="limparErroMsg()" type="text" name="name" id="name" minlength="2" placeholder="Digite seu nome"><br>
                     <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgName"></span>
                 </div>
     
                 <div class="input-field">
-                    <input  name="email" id="email"  placeholder="Digite seu email">
+                    <input onblur="limparErroMsg()" type="email" name="email" id="email" placeholder="Digite seu email">
                     <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgEmail"></span>
                 </div>
     
                 <div class="input-field">
-                    <input type="number" name="number" id="number" placeholder="Numero para contato">
+                    <input onblur="limparErroMsg()" type="" name="number" id="number" pattern="[0-9]{11}" placeholder="Numero (xx)xxxxxxxxx">
                     <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgNumber"></span>
                 </div>
     
                 <div class="input-field">
-                    <input type="text" name="assunto" id="assunto" placeholder="Qual assunto do seu contato?">
+                    <input onblur="limparErroMsg()" type="text" name="assunto" id="assunto" minlength="4" placeholder="Qual assunto do seu contato?">
                     <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgAssunto"></span>
                 </div>
     
                 <div class="textArea">
                     <p>Mensagem <i class="far fa-paper-plane"></i></p>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="Digite aqui sua mensagem"></textarea>
+                    <textarea onfocus="limparErroMsg()" name="mensagem" id="mensagem" cols="30" rows="2" placeholder="Digite aqui sua mensagem"></textarea>
+                    <span class="errorTroll" id="erroMsgMensagem"></span>
                 </div>
                 <div class="input-field">
-                    <input class="animate__animated animate__backInLeft" onclick="verify()" type="submit" value="Enviar">
-                     <input class="animate__animated animate__backInRight" id="cleanBtn" onclick="clean()" type="button" value="Apagar tudo">
+                    <input class="animate__animated animate__backInLeft" id="send" type="submit" onclick="validarForm()" value="Enviar">
+                     <input class="animate__animated animate__backInRight" id="cleanBtn" type="button" value="Apagar tudo">
                 </div>
             </form>
         </div>
@@ -67,10 +77,10 @@
 
     <footer>
         <section class="social-icons">
-            <i class="fab fa-telegram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-facebook"></i>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
         </section>
         <p>Desenvolvido por Barbaha, Thayza, Matheus, <b>Cleyton</b>, Italo e Camila para START</p>
     </footer>
