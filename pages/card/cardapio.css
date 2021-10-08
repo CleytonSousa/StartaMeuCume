@@ -68,6 +68,7 @@ span {
 }
 .card{
     margin: 2%;
+    border-bottom: 3px solid #502600;
     background-color: var( --color-bege-white);   
 }
 .imgComida{
@@ -97,6 +98,7 @@ span {
     width: 15vw;
     height: 20vh;
     margin-bottom: 2vh;
+    border-radius: 20px;
 }
 .contPhoto {
     display: flex;
@@ -111,9 +113,11 @@ span {
 .textCarda {
     display: flex;
     margin-bottom: 4vh;
+    border-bottom: 3px solid #502600;
 }
 .textCarda h2{
     padding: 1.5%;
+    margin-bottom: 1%;
 }
 .textCard h1{
     padding: 1.5%;
@@ -148,17 +152,14 @@ span {
     margin-bottom: 1.5vh;
 }
 
-
-
-
 /* POP UP*/
 .popUp {
     width: 50vw;
     height: 50vh;
     background-color: #B47110;
     position: fixed;
-    left: 500;
-    bottom: 270;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
     border-radius: 10px;
 }
@@ -175,7 +176,7 @@ span {
     font-weight: bold;
 }
 #imgTest {
-    width: 99.6vw;
+    width: 100vw;
     margin-top: -3vh;
     margin-bottom: 5vh;
 }
@@ -252,8 +253,81 @@ footer{
 }
 
 
+/* responsividade Italo */
 
+@media (max-width: 1360px){
+    #main{
+        margin-top: 23vh;
+    }
+}
+@media (max-width: 1200px){
+    #infos {
+        flex-direction: column;
+        text-align: center;
+    }
+    #imagemComida{
+        margin: 0 auto;
+    }
+    #imagemComida > img {
+        margin: 4%;
+    }
+    #imagemFic {
+        width: 200px;
+        height: 220px;
+    }
+}
+@media (max-width: 1100px){
+    #main{
+        margin-top: 18vh;
+    }
+    #nomeComida{
+        font-size: 30px;
+    }
+.textCarda {
+    justify-content: center;
+}
+}
+@media (max-width: 1000px){
+    .photo {
+        height: 15vh;
+        width: 18vw;
+    }
+}
+@media (max-width: 860px){
+    #siganos {
+        flex-direction: column;
+        justify-content: unset;
+        width: 100vw;
+        text-align: center;
+        width: 100vw;
+    }
+    .popUp {
+        width: 70vw;
+        height: 40vh;
+    }
+    .logoGlob{
+        width: 40px;
+    }
+    .textCard h1 {
+        font-size: 25px;
+    }
+    .textCarda h2 {
+        font-size: 22px;
+    }
+    .card {
+        text-align: center;
+    }
+    .pratos {
+        width: 18vw;
+    }
+    #comidas {
+        flex-direction: none;
+    }
+    .pratos {
+        font-size: 20px;
+    }
+    #nomeComida{
+        font-size: 25px;
+    }
 
-
-/* responsividade */
-
+}
