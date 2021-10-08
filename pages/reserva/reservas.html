@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- metas -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css e fonts -->
+    <link rel="stylesheet" href="reservas.css">
+    <link rel="stylesheet" href="/global.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- title -->
+    <title>Reservar uma mesa - Starta meu cumê</title>
+</head>
+<body>
+    <header>
+    </header>
+    <main id="tela_de_reservas">
+        <form>
+            <section id="reservar_uma_mesa">
+                <h2 class="title">Reservar uma mesa</h2>
+            
+                <label for="data">Data</label>
+                <input class="input" type="date" name="data" id="data">
+
+                <p id="verificar_data" class="check"></p>
+
+                <h3>Hora</h3>
+                <label for="">Almoço</label>
+                <div id="horario">
+                    <div id="horario_almoco">
+                        <button type="button" class="horario borda-horario" id="horario_1"value="12">12:00</button>
+                        <button type="button" class="horario" id="horario_3" value="13">13:00</button>
+                        <button type="button" class="horario" id="horario_5" value="14">14:00</button>
+                        <button type="button" class="horario" id="horario_7" value="15">15:00</button>
+                        <button type="button" class="horario" id="horario_9" value="16">16:00</button>
+                    </div>
+                     
+                    <label for="">Jantar</label>
+                    <div id="horario_jantar"> 
+                        <button type="button" class="horario" id="horario_11" value="17">17:00</button>
+                        <button type="button" class="horario" id="horario_13" value="18">18:00</button>
+                        <button type="button" class="horario" id="horario_15" value="19">19:00</button>
+                        <button type="button" class="horario" id="horario_17" value="20">20:00</button>
+                        <button type="button" class="horario" id="horario_19" value="21">21:00</button>
+                    </div>
+                    <p id="verificar_horario" class="check"></p>
+                </div>
+
+                <label for="numero_de_pessoas">Número de pessoas</label>
+                <input type="number" name="numero_de_pessoas" id="numero_de_pessoas" min="1">
+                <p id="verificar_numero_de_pessoas" class="check"></p>
+            </section>
+
+            <section id="contato_principal">
+                <h2 class="title">Contato Principal</h2>
+                
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <p id="verificar_nome_e_email" class="acheck"></p>
+            </section>
+            <div id="finalizar">
+                <p id="virificar_todos_os_dados" class="check"></p>
+                <button type="reset" id="cancelar">Cancelar</button>
+                <button type="button" id="salvar">Salvar</button>
+            </div>
+        </form>
+    </main>
+    
+    <!-- pop-up -->
+    <aside id="pop_up_salvar" class="pop_up_off pop-up">
+        <div>
+            <h2>Sua reserva foi salva <span id="informacoes_da_reserva_nome"></span>, estamos te aguardando no Restaurante Starta meu cumê!</h2>
+            <p id="informacoes_da_reserva_data"></p>
+            <p id="informacoes_da_reserva_hora"></p>
+            <p id="informacoes_da_reserva_pessoas"></p>
+            <button id="finalizar_reserva">Finalizar</button>
+        </div>
+    </aside>
+
+    <aside id="pop_up_cancelar" class="pop_up_off pop-up">
+        <div>
+            <h2>Sua reserva foi cancelada!</h2>
+            <button id="voltar">Finalizar</button>
+        </div>
+    </aside>
+
+    <!-- script -->
+    <script src="reservas.js"></script>
+</body>
+</html>

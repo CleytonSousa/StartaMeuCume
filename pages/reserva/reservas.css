@@ -1,0 +1,162 @@
+/* ----- global ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+}
+
+p {
+    color: #c92a2a;
+}
+/*----- header -----*/
+header {
+    text-align: center;
+    background-color: #c9842a;
+}
+
+header img {
+    width: 50vw;
+}
+/*----- main -----*/
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: 100vh;
+    background-color: #c9842a;
+}
+
+form {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.title {
+    text-align: center;
+    margin: .5rem;
+}
+
+label{
+    display: block;
+}
+
+input {
+    width: 315px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    border: 2px solid #2ac96c;
+}
+
+/* buttons */
+#cancelar, #salvar {
+    width: 100px;
+    height: 30px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: white;
+}
+
+#cancelar {
+    background-color: #c92a2a;
+}
+
+#salvar {
+    background-color: #2ac96c;
+}
+
+/* finalizar */
+#pop_up_salvar p {
+    color: #2ac96c;
+}
+/* ----- horário ----- */
+.horario {
+    width: 70px;
+    height: 30px;
+    margin: .3rem;
+
+    font-size: 16px;
+    border: 1px solid black;
+
+}
+div#horario_almoco, div#horario_jantar {
+    display: grid;
+    /* 4 columns de 70px */
+    grid-template-columns: 80px 80px 80px 80px;
+}
+.pop-up > div{
+    background-color: white;
+    padding: 3rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pop-up  > div > button {
+    width: 100px;
+    height: 30px;
+    border: 2px solid rgb(79, 183, 224);
+}
+
+/* cancelar */
+#pop_up_cancelar > div {
+    color: #c92a2a;
+}
+
+/* script */
+#virificar_todos_os_dados {
+    word-wrap: break-word;
+    width: 300px;
+}
+.borda-horario {
+    border: 3px solid rgb(79, 224, 79);
+}
+
+.pop_up_on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: fixed;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.37);
+
+}
+
+.pop_up_off {
+    display: none;
+}
+
+
+/*responsive - mobile*/
+@media(max-width:  1024px){
+    main {
+        height: 126vh;
+    }
+}
