@@ -8,7 +8,7 @@ let mensagem = document.getElementById("mensagem").value
 
 
 let regexName = /[1-9]/
-let regexEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
+let regexEmail = "" // /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i
 let regexNumber = /[a-zA-Z]/
 
 
@@ -24,9 +24,9 @@ let regexNumber = /[a-zA-Z]/
         document.getElementById("erroMsgName").innerHTML = "O campo <b><u>Nome</b></u> não pode conter caracteres especiais!"
     }
 
-    if(regexEmail.test(email) == false){
-        document.getElementById("erroMsgEmail").innerHTML = "Erro, <b><u>Email</b></u> invalido!"
-    }
+    // if(regexEmail.test(email) == false){
+    //     document.getElementById("erroMsgEmail").innerHTML = "Erro, <b><u>Email</b></u> invalido!"
+    // }
 
     if(regexNumber.test(number) == true){
         document.getElementById("erroMsgNumber").innerHTML = "<b><u>Numero</b></u> não pode conter letras"
@@ -40,6 +40,10 @@ let regexNumber = /[a-zA-Z]/
     }
     if(mensagem === ""){
         document.getElementById("erroMsgMensagem").innerHTML = "O campo <b><u>mensagem</u></b> não pode estar vazio"
+    }
+
+    else{
+        window.location.reload(true)
     }
 }
 

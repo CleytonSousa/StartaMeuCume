@@ -13,6 +13,7 @@ html{
     height: 100vh;
 }
 
+
 /* MENSAGEM DE ERRO DOS INPUTS */
 
 #erroMsgEmail, #erroMsgName, #erroMsgNumber, #erroMsgAssunto, #erroMsgMensagem{
@@ -41,13 +42,21 @@ body{
   height: 100vh;
 }
 
-/* heander */
+/* header */
 nav{
     display: flex;
     background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
     border-bottom: var(--color-marrom-escuro) 1px solid;
+}
+
+header{
+    display: block;
+    position: fixed;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
 }
 
 nav img{
@@ -67,7 +76,6 @@ ul{
 ul li a{
     text-decoration: none;
     color: black;
-    padding: 0 10px;
     padding: 0 15px;
 }
 
@@ -95,7 +103,7 @@ main{
 	background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 120vh;
 }
 
 .logoHeaderResp{
@@ -104,6 +112,11 @@ main{
 
 .social-icons:hover{
 
+}
+
+.small-img{
+    margin: 2vh 2vw 2vh 1vw;
+    width: 2vw;
 }
 
 /*Animations*/
@@ -134,7 +147,6 @@ main{
 .intro{
     width: 50%;
     text-align: center;
-    height: 100vh;
 }
 
 .intro h1, h3{
@@ -151,7 +163,8 @@ main{
     padding: 2rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
     border-radius: 8px;
-    margin-top: -50px;
+    max-height: 635px;
+    margin-top: 100px;
 }
 
 .getInfosUser h2{
@@ -276,12 +289,32 @@ footer i{
 }
 
 
-
 @media (max-width: 602px) {
+
     main {
         display: block;
-        height: 130vh;
+        height: 105vh;
     }
+
+    nav{
+        display: block;
+    }
+
+    nav img{
+        margin: auto;
+    }
+
+    ul{
+        margin: 8px 0;
+        padding: 0;
+        font-size: 11px;
+        font-weight: bolder;
+    }
+
+    ul li a{
+        padding: 0 3.5vw;
+    }
+
 
     .intro{
         height: 19vh;
@@ -316,6 +349,7 @@ footer i{
 
     .getInfosUser{
        width: auto;
+       max-width: 350px;
        margin: auto;
        
     }
@@ -332,6 +366,10 @@ footer i{
 
     footer{
         height: auto;
+    }
+
+    .small-img{
+        width: 5vw;
     }
 
     #erroMsgMensagem{
