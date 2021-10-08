@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
 }
+
+html{
+    height: 100%;
+}
+
 body{
     background-color: #FFEB99;
     font-family: 'Poppins', sans-serif;
@@ -37,7 +42,6 @@ nav{
 .menu{
     margin-left: 1vw;
     font-size: 3vh;
-    text-transform: uppercase;
 }
 
 a{
@@ -48,13 +52,40 @@ a{
 #div-container{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40vh;
-    width: 70vw;
+    margin-top: 7vh;
+    width: 80%;
+}
+
+#imagem-principal{
+    width: 100%;
+    margin-top: 22vh;
+}
+
+.titulo{
+    display: flex;
+    border-bottom: 4px solid #B47110 ;
+    margin-bottom: 2.5vh;
+}
+
+.logo-titulo{
+    width: 4vw;
+    margin-right: 1vw;
 }
 
 h2{
+    margin-left: 0.2vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
+    
+}
+
+.texto-principal{
+    margin: 1vw;
+    font-size: 26px;
+}
+
+#pratos-principais-imagens{
+    height: 25vh;
 }
 
 #section-icons{
@@ -80,4 +111,325 @@ footer{
 #rodape{
     padding: 3vh;
     font-size: 1.5vh;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+/* RESPONSIVIDADE - DESKTOP */
+
+@media (max-width: 1500px){
+    nav{
+        margin-left: 47vw;
+        margin-top: -10.5vh;
+    }
+    .menu{
+        font-size: 1.8vw;
+    }
+    .texto-principal{
+        font-size: 25px;
+    }
+    .icones{
+        width: 2.6vw;
+    }
+}
+
+@media (max-width: 1460px){
+    nav{
+        margin-top: -10vh;
+        margin-left: 47vw;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .texto-principal{
+        font-size: 25px;
+    }
+    .icones{
+        width: 2.5vw;
+    }
+}
+
+@media (max-width: 1370px){
+    #logomarca{
+        width: 44vw;
+    }
+    nav{
+        margin-left: 46.5vw;
+    }
+    .menu{
+        font-size: 1.8vw;
+    }
+    #section-header{
+        height: 17vh;
+    }
+    #imagem-principal{
+        margin-top: 17.1vh;
+    }
+    .icones{
+        width: 2.5vw;
+    }
+}
+
+@media (max-width: 1250px){
+    nav{
+        margin-left: 45.5vw;
+        margin-top: -9.5vh;
+    }
+    h2{
+        font-size: 2.5vw;
+    }
+    #div-texto{
+        margin-bottom: 3vh;
+    }
+}
+
+@media (max-width: 1200px){
+    nav{
+        margin-top: -6.5vw;
+    }
+    .icones{
+        width: 2.8vw;
+    }
+}
+
+@media (max-width: 1100px){
+    #section-header{
+        height: 15vh;
+    }
+    nav{
+        margin-left: 46vw;
+        margin-top: -7vw;
+    }
+    .menu{
+        font-size: 1.9vw;
+    }
+    #imagem-principal{
+        margin-top: 11.6vw;
+    }
+    .icones{
+        width: 3.3vw;
+    }
+    .texto-principal{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 950px){
+    #logomarca{
+        width: 42.3vw;
+    }
+    nav{
+        margin-left: 45vw;
+        margin-top: -7.5vw;
+    }
+    .menu{
+        font-size: 1.9vw;
+    }
+    .texto-principal{
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 900px){
+    #section-header{
+        height: 11.5vh;
+    }
+    nav{
+        margin-top: -8.5vh;
+    }
+    #imagem-principal{
+        margin-top: 11.5vh;
+    }
+    .texto-principal{
+        font-size: 20px;
+    }
+    .icones{
+        width: 3.5vw;
+    }
+}
+
+/* MENU DESCE */
+
+@media (max-width: 880px){
+    #logomarca{
+        width: 65vw;
+        margin-left: 15vw;
+    }
+    nav{
+        width: 100%;
+        margin-left: 10vw;
+        margin-top: -2vh;
+    }
+    #section-header{
+        height: 21vh;
+    }
+    #imagem-principal{
+        margin-top: 21vh;
+    }
+    .menu{
+        font-size: 3vw;
+    }
+    #div-container{
+        margin-top: 2vh;
+    }
+    .logo-titulo{
+        width: 6vw;
+    }
+    h2{
+        font-size: 2.8vw;
+    }
+}
+
+@media (max-width: 800px){
+    #section-header{
+        height: 19.5vh;
+    }
+    #imagem-principal{
+        margin-top: 19.5vh;
+    }
+}
+
+@media (max-width: 750px){
+    nav{
+        margin-left: 7vw;
+    }
+    #section-header{
+        height: 20vh;
+    }
+    #imagem-principal{
+        margin-top: 20vh;
+    }
+    h2{
+        font-size: 3vw;
+    }
+}
+
+@media (max-width: 650px){
+    #section-header{
+        height: 18vh;
+    }
+    #imagem-principal{
+        margin-top: 18vh;
+    }
+    .texto-principal{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 600px){
+    #section-header{
+        height: 16.5vh;
+    }
+    #imagem-principal{
+        margin-top: 16.5vh;
+    }
+    .icones{
+        width: 5vw;
+    }
+    #rodape{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 500px){
+    #section-header{
+        height: 15vh;
+    }
+    #imagem-principal{
+        margin-top: 15vh;
+    }
+    .logo-titulo{
+        width: 8vw;
+    }
+}
+
+
+
+/* RESPONSIVIDADE - MOBILE */
+
+
+@media (max-width: 414px){
+    #section-header{
+        height: 14vh;
+    }
+    nav{
+        width: 100%;
+        margin-top: -3vh;
+        margin-left: 9vw;
+    }
+    #imagem-principal{
+        margin-top: 14vh;
+    }
+    .texto-principal{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px){
+    nav{
+        margin-top: -4vh;
+    }
+}
+
+@media (max-width: 360px){
+    #section-header{
+        height: 13vh;
+    }
+    nav{
+        width: 100%;
+        margin-left: 3.5vw;
+        margin-top: -5vh;
+    }
+    .menu{
+        font-size: 12px;
+    }
+    #imagem-principal{
+        margin-top: 13vh;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .texto-principal{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px){
+    #section-header{
+        height: 14vh;
+    }
+    nav{
+        margin-left: 4.5vw;
+        margin-top: -5vh;
+    }
+    #imagem-principal{
+        margin-top: 14.1vh;
+    }
+    .texto-principal{
+        font-size: 12px;
+    }
+    .icones{
+        width: 6.5vw;
+    }
+    #rodape{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 280px){
+    #section-header{
+        height: 11vh;
+    }
+    .menu{
+        font-size: 9px;
+    }
+    #imagem-principal{
+        margin-top: 11.1vh;
+    }
 }
