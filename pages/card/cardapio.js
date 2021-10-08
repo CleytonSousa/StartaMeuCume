@@ -116,6 +116,7 @@ function conteudoB(cont){
     valorB = cont
     if (valorB == "imag4"){
         imgFic.setAttribute('src','/pages/card/img/bebidas/pitu.png')
+        imgFic.setAttribute('height','250px')
         document.getElementById('nomeComida').innerHTML = "Pitu do amor"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -140,6 +141,7 @@ function conteudoB(cont){
         valores.style.fontWeight = "bold"
     } else if (valorB == "imag6"){
         imgFic.setAttribute('src','/pages/card/img/bebidas/mojito.png')
+        imgFic.setAttribute('height','250px')
         document.getElementById('nomeComida').innerHTML = "Mojito"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""

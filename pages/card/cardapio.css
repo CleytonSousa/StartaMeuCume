@@ -68,7 +68,6 @@ span {
 }
 .card{
     margin: 2%;
-    border-bottom: 3px solid #502600;
     background-color: var( --color-bege-white);   
 }
 .imgComida{
@@ -113,7 +112,6 @@ span {
 .textCarda {
     display: flex;
     margin-bottom: 4vh;
-    border-bottom: 3px solid #502600;
 }
 .textCarda h2{
     padding: 1.5%;
@@ -131,7 +129,7 @@ span {
 }
 
 
-/* TUDO AQUI SERÁ O TESTE PRA QUANDO ADICIONAR A FUNCAO JS JA EXISTIR O PADRAO */
+/* detalhes popup js */
 
 #infos {
     display: flex;
@@ -140,9 +138,8 @@ span {
     margin: 0 auto; 
 }
 
-#testandoImg {
+#imagemFic {
     border-radius: 8px;
-    margin: 5%;
     
 }
 #infosComida {
