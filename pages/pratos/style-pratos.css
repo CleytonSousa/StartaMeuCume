@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flexbox;
+    background-color: #ECCC74;
+}
+
+#container{
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+}
+
+/* #section-header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18vh;
+    background-color: #ECCC74;
+}
+
+#logomarca{
+    margin: 2vh;
+    width: 40vw;
+}
+
+nav{
+  width: 50%;
+  float: right;
+  margin-top: 5%;
+}
+
+.menu, ul, li{
+    display: inline;
+    list-style: none;
+}
+
+.menu{
+    margin-left: 2vw;
+    font-size: 2.2vh;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+} */
+
+.principais{
+  margin-top: 5%;
+  height: 400px;
+  width: 100%;
+  padding-top: 2%;
+  background-color: #fff5cc;
+}
+
+.title > img{
+  width: 3.75em;
+  position: static;
+  float: left;
+}
+
+.title > h1{
+  font-weight: 700;
+  float: left;
+  margin: 2% 0 5% 1%;
+}
+
+.prato{
+  list-style: none;
+  width: 20%;
+  float: left;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+.principais > #container > ul{
+  float: left;
+}
+
+.prato > a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  
+}
+
+.prato > a > img{
+  width: 100%;
+  height: 100%;
+}
+
+.prato > a > p{
+  text-align: center;
+}
+
+/* #maodevaca{
+  background-color: #ECCC74 !important; 
+}
+
+#galinha{
+  background-color: #fff5cc !important; 
+} */
+
+
+/* .amarelo-murcho{
+  background-color: #fff5cc;
+} */
+
+/* .burroqndfoge{
+  background-color: #ECCC74;
+} */
+
+section.detalhes-esq{
+  background-color: #ECCC74;
+}
+
+section:nth-child(even).detalhes-dir{
+  background-color: ##fff5cc;
+}
+
+.detalhes-esq{
+  width: 100%;
+  height: 50%;
+
+}
+
+.detalhes-esq > #container > .title{
+  margin-top: 5%;
+}
+
+.cont-detalhes{
+  float: left;
+}
+
+.cont-detalhes > img{
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin-bottom: 5%;
+  margin-left: 3%;
+}
+
+.cont-detalhes > p{
+  width: 50%;
+  float: left;
+  margin-left: 5%;
+}
+
+section.detalhes-dir{
+  width: 100%;
+  height: 50%;
+  background-color: #fff5cc !important;;
+}
+
+.detalhes-dir > #container > .title{
+  margin-top: 5%;
+}
+
+
+
+/****
+#section-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones{
+    margin: 2vh 2vw 0.1vh 1vw;
+    width: 3.5vw;
+}
+
+footer{
+    padding: 0;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background-color: #B47110;
+}
+
+#rodape{
+    padding: 3vh;
+    font-size: 1.5vh;
+}
+
+****/
