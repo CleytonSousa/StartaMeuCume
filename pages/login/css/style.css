@@ -114,7 +114,7 @@ button:hover{
     align-items: center;
     justify-content: center;
 }
-#popup-boasvindas{ background-color: var(--color-bege-white);}
+#popup-boasvindas{background-color: var(--color-bege-white);}
 #popup-senha{background-color: var(--color-bege-white);}
 
 #popup-senha, #popup-boasvindas{

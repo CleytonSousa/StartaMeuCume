@@ -2,7 +2,7 @@
 //validação
 const botaoAcess = document.getElementById("btnAcess");
 botaoAcess.addEventListener("click", function(verificacao){
-    var loginCampo = document.getElementById("login").value;
+    var loginCampo = document.getElementById("emailLogin").value;
     var passCampo = document.getElementById("pass").value;
     
     if((validarEmail(loginCampo)) && (passCampo.length>=8)){
@@ -22,10 +22,6 @@ function validarEmail(email){
     var validacao =  /\S+@\S+.\S+/;
     return validacao.test(email)
 }
-
-
-console.log("oi")
-
 
 //Esqueceu Senha
 const cliqueAquiLink = document.getElementById("cliqueAqui");

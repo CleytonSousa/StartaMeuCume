@@ -8,19 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reponsive.css">
     <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/pages/home/style.css">
     <!-- link javascript -->
     <script type="text/javascript" src="javascript/script.js" defer></script>
     <!-- link icons - fontawsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images Global/logo.svg" />
     <title>Login</title>
 </head>
 <body>
+
+    <header>
+        <section id="section-header">
+            <a href=""><img id="logomarca" src="/images Global/text_end_logo.svg" alt=""></a>
+            <nav>
+                <ul> 
+                    <li><a class="menu" id="login" href="login.html">Login</a></li> 
+                    <li><a class="menu" id="cardapio" href="#">Cardápio</a></li>
+                    <li><a class="menu" id="pratos-populares" href="#">Pratos Populares</a></li>
+                    <li><a class="menu" id="reservas" href="#">Reservas</a></li>
+                    <li><a class="menu" id="contatos" href="pages/FormContatos/contato/contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
     <main id="container-principal">
         <!-- left -->
         <section id="container-left">
-            <img id="logo" src="img/logo.svg" width="80%" alt="STARTA MEU CUMÊ">
+            <img id="logo" src="/images Global/text_end_logo.svg" width="80%" alt="STARTA MEU CUMÊ">
         </section>
 
         <!-- right -->
@@ -31,7 +48,7 @@
                     <div>
                         <div id="container-login">
                             <i class="fas fa-user"></i>
-                            <input type="email" id="login" placeholder="Email">
+                            <input type="email" id="emailLogin" placeholder="Email">
                         </div>
                         <div id="container-password">
                             <i class="fas fa-lock"></i>
@@ -54,7 +71,22 @@
             </div>
         </section>
     </main>
-    <footer> <p> Camila Silva - Rede Cidadã </p> </footer>
+    
+    <footer>
+        <section id="section-icons">
+            <ul>
+                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/facebook.png" alt="icon-facebook"></a></li>
+                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/instagram.png" alt="icon-instagram"></a></li>
+                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/telegram.png" alt="icon-telegram"></a></li>
+                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/twitter.png" alt="icon-twitter"></a></li>
+                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/whatsapp.png" alt="icon-whatsapp"></a></li>
+            </ul>
+        </section>
+        <section>
+            <p id = "rodape"> &#169; Desenvolvido por: Barbaha,<span> Camila</span>, Cleyton, Italo, Matheus e Thayza para START</p>
+        </section>
+    </footer>
+    <script src="/pages/home/script.js"></script>
 
     <!-- pop-up entrar contato -->
     <div id="fundo-popup-senha">
@@ -68,7 +100,7 @@
             </p>
             <div id="botoes-popup-senha">
                 <button id="btn-entrarContato" class="btn-popup">
-                    <a id="entrarContato" href="#">Entrar em contato</a>
+                    <a id="entrarContato" href="/pages/FormContatos/contato/contatos.html">Entrar em contato</a>
                 </button>
                 <button id="btn-voltar" class="btn-popup">Voltar</button>
             </div>
@@ -86,7 +118,7 @@
                 Clique no botão abaixo e será ser redirecionado para a página principal.
             </p>
             <button id="btn-home" class="btn-popup">
-                    <a id="entrarContato" href="#">Home</a>
+                    <a id="entrarContato" href="/index.html">Home</a>
             </button>
         </div>
     </div>
