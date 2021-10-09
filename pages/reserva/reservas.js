@@ -149,3 +149,28 @@ const finalizar_reserva = document.getElementById("finalizar_reserva")
 finalizar_reserva.addEventListener("click", () => {
     document.location.reload(true);
 });
+
+/*--------------------------- header - nav ----------------------*/
+
+
+// mobile menu
+const menuOpen = document.getElementById("menuIconOpen");
+menuOpen.addEventListener("click", () => {
+    document.getElementById("menuIconClose").style.display = "flex";
+    document.getElementById("menuIconOpen").style.display = "none";
+
+    document.getElementById("navMobiel").style.display = "flex"
+})
+
+const menuClose = document.getElementById("menuIconClose");
+menuClose.addEventListener("click", () => {
+    document.getElementById("menuIconOpen").style.display = "flex";
+    document.getElementById("menuIconClose").style.display = "none";
+
+    document.getElementById("navMobiel").style.display = "none"
+
+
+})
+
+
+/*--------------------------- header - nav ----------------------*/

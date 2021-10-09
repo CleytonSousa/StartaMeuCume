@@ -27,6 +27,105 @@ p {
     color: #c92a2a;
 }
 
+/*--------------------------- header - nav ----------------------*/
+header {
+    background-color: var(--color-bege);
+    padding: 3rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 5px solid var(--color-marrom-claro);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+header img {
+    width: 350px;
+}
+
+header a {
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+header a:hover {
+    border-bottom: 2px solid var(--color-marrom-claro);
+}
+
+header #menuIconOpen {
+    width: 50px;
+}
+
+header #menuIconClose {
+    display: none;
+    width: 50px;
+}
+
+/* mobile */
+
+#navMobiel {
+    display: none;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-marrom-escuro);
+    padding: 1rem;
+}
+
+#navMobiel a {
+    color: var(--color-bege);
+    text-decoration: none;
+}
+
+/* menu mobile */
+@media(max-width: 1198px){
+
+    #navDesktop{
+        display: none;
+    }
+
+}
+
+@media(min-width: 1198px){
+
+    #mobileButtons{
+        display: none;
+    }
+
+    #navMobiel {
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+
+    header img {
+        width: 200px;
+    }
+
+    header {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    #menuIconOpen{
+        width: 10px;
+    }
+}
+
+/*--------------------------- header - nav ----------------------*/
+
+
 
 /*----- main -----*/
 main {
@@ -34,17 +133,16 @@ main {
     justify-content: center;
     align-items: center;
 
-    margin-top: 5rem;
 
     gap: 5rem;
 
-    height: 120vh;
+    height: 100vh;
 }
 
 form {
     background-color: white;
     margin: 1rem;
-    margin-top: 7rem;
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 2px 2px 1px 1px var(--color-marrom-escuro);
@@ -94,6 +192,10 @@ i {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
 }
 
 footer p {
@@ -196,10 +298,12 @@ div#horario_almoco, div#horario_jantar {
 }
 
 
+
 /*responsive - mobile*/
+
 @media(max-width: 1024px){
     main {
-        height: 150vh;
+        height: 120vh;
         flex-direction: column;
         justify-content: flex-start;
 

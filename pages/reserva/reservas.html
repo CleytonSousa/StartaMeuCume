@@ -16,26 +16,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <!-- css footer e header - Thayza -->
-    <link rel="stylesheet" href="/pages/home/style.css">
     <!-- title -->
     <title>Reservar uma mesa - Starta meu cumê</title>
 </head>
 <body>
+
+    <!-- --------------------------- header - nav ---------------------- -->
+
     <header>
-        <section id="section-header">
-            <a href=""><img id="logomarca" src="/pages/home/imagens/text_end_logo.svg" alt=""></a>
-            <nav>
-                <ul> 
-                    <li><a class="menu" id="login" href="">Login</a></li> 
-                    <li><a class="menu" id="cardapio" href="">Cardápio</a></li>
-                    <li><a class="menu" id="pratos-populares" href="#">Pratos Populares</a></li>
-                    <li><a class="menu" id="reservas" href="">Reservas</a></li>
-                    <li><a class="menu" id="contatos" href="">Contato</a></li>
-                </ul>
-            </nav>
-        </section>
+        <picture>
+            <img src="/images Global/text_end_logo.svg" alt="logo">
+        </picture>
+        <nav id="navDesktop">
+            <ul>
+                <li><a class="menu" href="">Login</a></li> 
+                <li><a class="menu" href="">Cardápio</a></li>
+                <li><a class="menu" href="">Pratos Populares</a></li>
+                <li><a class="menu" href="">Reservas</a></li>
+                <li><a class="menu" href="">Contato</a></li>
+            </ul>
+        </nav>
+        <div id="mobileButtons">
+            <img src="/images Global/menu.svg" id="menuIconOpen" alt="menu">
+            <img src="/images Global/x.svg" id="menuIconClose" alt="menu">
+        </div>
     </header>
+    <nav id="navMobiel">
+        <ul>
+            <li><a class="menu" href="">Login</a></li> 
+            <li><a class="menu" href="">Cardápio</a></li>
+            <li><a class="menu" href="">Pratos Populares</a></li>
+            <li><a class="menu" href="">Reservas</a></li>
+            <li><a class="menu" href="">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- --------------------------- header - nav ---------------------- -->
+
     <main id="tela_de_reservas">
         <section id="image">
             <picture>
@@ -105,20 +122,6 @@
             </div>
         </form>
     </main>
-    <footer>
-        <section id="section-icons">
-            <ul>
-                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/facebook.png" alt=""></a></li>
-                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/instagram.png" alt=""></a></li>
-                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/telegram.png" alt=""></a></li>
-                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/twitter.png" alt=""></a></li>
-                <li><a href="#"><img class="icones" src="/pages/home/imagens/redes-sociais/whatsapp.png" alt=""></a></li>
-            </ul>
-        </section>
-        <section>
-            <p id = "rodape"> &#169; Desenvolvido por: Barbaha, Camila, Cleyton, Italo, Matheus e <span>Thayza</span> para START</p>
-        </section>
-    </footer>
     
     <!-- pop-up -->
     <aside id="pop_up_salvar" class="pop_up_off pop-up">
@@ -141,8 +144,6 @@
     <!-- script -->
     <script src="reservas.js"></script>
 
-    <!-- script - Thayza -->
-    <script src="/pages/home/script.js"></script>
     <!-- icons -->
     <script src="https://kit.fontawesome.com/507fbc386a.js" crossorigin="anonymous"></script>
 </body>
