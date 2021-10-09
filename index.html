@@ -4,22 +4,36 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="pages/home/style.css">
         <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="pages/home/style.css">
         <link rel="shortcut icon" href="pages/home/imagens/logo.svg" type="image/x-icon">
         <title>Restaurante Starta Meu Cumê - Home</title>
     </head>
     <body>
         <header>
-            <div id="div-header">
-                <img id="logomarca" src="pages/home/imagens/text_end_logo.svg" alt="">
-            </div>
+            <section id="section-header">
+                <a href=""><img id="logomarca" src="pages/home/imagens/text_end_logo.svg" alt=""></a>
+                <nav>
+                    <ul> 
+                        <li><a class="menu" id="login" href="login.html">Login</a></li> 
+                        <li><a class="menu" id="cardapio" href="#">Cardápio</a></li>
+                        <li><a class="menu" id="pratos-populares" href="#">Pratos Populares</a></li>
+                        <li><a class="menu" id="reservas" href="#">Reservas</a></li>
+                        <li><a class="menu" id="contatos" href="pages/FormContatos/contato/contatos.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
         </header>
-        <div id="container">
-            <div id="esquerda">
-                <img id="imagem" src="pages/home/imagens/temporaria.jpg" alt="">
-                <h2>Sejam Bem-Vindos ao Restaurante Starta Meu Cumê</h2>
-                <p>
+        <div id="div-imagem">
+            <img id="imagem-principal" src="pages/home/imagens/image-1.svg" alt="">
+        </div>
+        <div id="div-container">
+            <div id = "div-texto">
+                <section class="titulo">
+                    <img class="logo-titulo" src="pages/home/imagens/logo.svg" alt="">
+                    <h2>Sejam Bem-Vindos ao Restaurante Starta Meu Cumê</h2>
+                </section>
+                <p class="texto-principal">
                    Somos um restaurante arretado de comida Nordestina 
                    para que aquelas pessoas que sentem uma falta danada 
                    da sua terra natal, possa vir até nós e matar um pouco 
@@ -27,46 +41,43 @@
                    com muito amor e carinho e sem deixar faltar aquele tempero 
                    que só o Nordeste tem.
                 </p>
-                <p>
+                <p class="texto-principal">
                     Aqui você poderá encontrar pratos típicos de todos os estados
                     que compõem essa linda região. Isso também inclui bebidas e 
                     sobremesas, visse.
                 </p>
-                <p>
+                <p class="texto-principal">
                     E mesmo que você não seja uma dessas pessoas que sentem 
                     saudade da terrinha delas, você tem também pode vir 
                     conhecer o maravilhoso tempero Nordestino e nos contar
                     o que achou dessa comida maravilhosa.            
                 </p>
-                <p> 
+                <p class="texto-principal"> 
                     Sejam todos muito bem-vindos mais uma vez e fiquem super a vontade!
                 </p>
-                <section>
-                    <h2>Logo abaixo estão as nossas Redes Sociais para você entrar em contato com a gente</h2>
-                    <section id="section-icons">
-                       <a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/instagram.png" alt=""></a>
-                       <a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/telegram.png" alt=""></a>
-                       <a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/twitter.png" alt=""></a>
-                       <a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/whatsapp.png" alt=""></a>
-                    </section>
-                </section>                
             </div>
-            <div id="direita">
-                <nav>
-                    <h3>Acesse aqui:</h3>
-                    <ul> 
-                        <li class="menu"><a href="">Login</a></li> 
-                        <li class="menu"><a href="">Cardápio</a></li>
-                        <li class="menu"><a href="">Pratos Populares</a></li>
-                        <li class="menu"><a href="">Reservas</a></li>
-                        <li class="menu"><a href="pages/Form contatos/contato/contatos.html">Contato</a></li>
-                    </ul>
-                </nav>
+            <div id="pratos-principais-imagens">
+                <section class="titulo">
+                    <img class="logo-titulo" src="pages/home/imagens/logo.svg" alt="">
+                    <h2>Pratos Principais</h2>
+                </section>
+
             </div>
         </div>
         <footer>
-            <p id = "rodape"> &#169; Thayza Santana - Projeto Start</p>
+            <section id="section-icons">
+                <ul>
+                    <li><a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/facebook.png" alt=""></a></li>
+                    <li><a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/instagram.png" alt=""></a></li>
+                    <li><a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/telegram.png" alt=""></a></li>
+                    <li><a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img class="icones" src="pages/home/imagens/redes-sociais/whatsapp.png" alt=""></a></li>
+                </ul>
+            </section>
+            <section>
+                <p id = "rodape"> &#169; Desenvolvido por: Barbaha, Camila, Cleyton, Italo, Matheus e <span>Thayza</span> para START</p>
+            </section>
         </footer>
-        <script src="script.js"></script>
+        <script src="pages/home/script.js"></script>
     </body>
 </html>
