@@ -13,6 +13,7 @@
     <!-- link icons - fontawsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
+
     <title>Login</title>
 </head>
 <body>
@@ -24,7 +25,6 @@
 
         <!-- right -->
         <section id="container-right">
-            
             <div id="container-formulario">
                 <form id="formulario">
                     <h2 id="titulo"> Login </h2>
@@ -35,11 +35,15 @@
                         </div>
                         <div id="container-password">
                             <i class="fas fa-lock"></i>
-                            <input type="password" id="pass" placeholder="Senha">
+                            <input type="password" id="pass" placeholder="Senha (8 dígitos)">
                         </div>
-                        <p id="obs">  </p>
+                        <div id="alertas">
+                            <p id="preencha">
+                                <i id="icon-preencha" class="fas fa-exclamation-triangle"> </i> Preencha os campos necessários. 
+                            </p>
+                        </div>
                     </div>
-                    <div>
+                    <div id="botao-senha">
                         <br>
                         <button id="btnAcess" type="submit"> Acessar </button>
                         <br>
@@ -51,5 +55,42 @@
         </section>
     </main>
     <footer> <p> Camila Silva - Rede Cidadã </p> </footer>
+
+    <!-- pop-up entrar contato -->
+    <div id="fundo-popup-senha">
+        <div id="popup-senha">
+            <img class="imagem-chef" src="https://img.icons8.com/dotty/80/000000/chef-hat.png"/>
+            <p>
+                Para recuperar a senha, entre em contato com o restaurante. 
+            </p>
+            <p>
+                Clique no botão abaixo para ser redirecionado.
+            </p>
+            <div id="botoes-popup-senha">
+                <button id="btn-entrarContato" class="btn-popup">
+                    <a id="entrarContato" href="#">Entrar em contato</a>
+                </button>
+                <button id="btn-voltar" class="btn-popup">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop-up boas vindas -->
+    <div id="fundo-popup-boasvindas">
+        <div id="popup-boasvindas">
+            <img class="imagem-chef" src="https://img.icons8.com/dotty/80/000000/chef-hat.png"/>
+            <p>
+                Boas-vindas ao restaurante STARTA MEU CUMÊ!!
+            </p>
+            <p>
+                Clique no botão abaixo e será ser redirecionado para a página principal.
+            </p>
+            <button id="btn-home" class="btn-popup">
+                    <a id="entrarContato" href="#">Home</a>
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>
+
