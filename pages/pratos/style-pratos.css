@@ -7,7 +7,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     display: flexbox;
-    background-color: #ECCC74;
+    /* background-color: #ECCC74; */
 }
 
 #container{
@@ -117,22 +117,29 @@ a{
   background-color: #ECCC74;
 } */
 
-section.detalhes-esq{
-  background-color: #ECCC74;
-}
 
-section:nth-child(even).detalhes-dir{
+/* section:nth-child(even).detalhes-dir{
   background-color: ##fff5cc;
-}
+} */
 
 .detalhes-esq{
+  background-color: #ECCC74;
   width: 100%;
-  height: 50%;
+  height: 40%;
+  float: left;
 
+}
+
+.detalhes-dir{
+  background-color: #fff5cc;
+  width: 100%;
+  height: 40%;
+  float: left;
+  
 }
 
 .detalhes-esq > #container > .title{
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .cont-detalhes{
@@ -141,22 +148,26 @@ section:nth-child(even).detalhes-dir{
 
 .cont-detalhes > img{
   width: 40%;
-  height: 40%;
-  float: left;
   margin-bottom: 5%;
   margin-left: 3%;
 }
+.detalhes-esq > #container > .cont-detalhes > img{
+  float: left;
+}
 
-.cont-detalhes > p{
+.detalhes-esq > #container > .cont-detalhes > p{
   width: 50%;
   float: left;
   margin-left: 5%;
 }
 
-section.detalhes-dir{
-  width: 100%;
-  height: 50%;
-  background-color: #fff5cc !important;;
+.detalhes-dir > #container > .cont-detalhes > img{
+  float: right;
+}
+.detalhes-dir > #container > .cont-detalhes > p{
+  width: 50%;
+  float: right;
+  margin-left: 5%;
 }
 
 .detalhes-dir > #container > .title{
