@@ -34,6 +34,7 @@ main {
     justify-content: center;
     align-items: center;
 
+    margin-top: 5rem;
 
     gap: 5rem;
 
@@ -43,6 +44,7 @@ main {
 form {
     background-color: white;
     margin: 1rem;
+    margin-top: 7rem;
     padding: 1rem;
     border-radius: 12px;
     box-shadow: 2px 2px 1px 1px var(--color-marrom-escuro);
@@ -92,6 +94,10 @@ i {
     display: flex;
     justify-content: center;
     gap: 1rem;
+}
+
+footer p {
+    color: black;
 }
 
 /* buttons */
@@ -193,7 +199,7 @@ div#horario_almoco, div#horario_jantar {
 /*responsive - mobile*/
 @media(max-width: 1024px){
     main {
-        height: 140vh;
+        height: 150vh;
         flex-direction: column;
         justify-content: flex-start;
 
