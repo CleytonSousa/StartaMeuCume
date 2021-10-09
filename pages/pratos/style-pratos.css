@@ -16,41 +16,70 @@ body{
   margin-left: 10%;
 }
 
-/* #section-header{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 18vh;
-    background-color: #ECCC74;
+/* MENU  */
+
+.nav-menu{
+  display: flex;
+  background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege));
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-bottom: var(--color-marrom-escuro) 1px solid;
 }
 
-#logomarca{
-    margin: 2vh;
-    width: 40vw;
+header{
+  display: block;
+  position: fixed;
+  z-index: 5;
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-  width: 50%;
-  float: right;
-  margin-top: 5%;
-}
-
-.menu, ul, li{
-    display: inline;
-    list-style: none;
+.nav-menu > img{
+  width: 40vw;
+  padding-bottom: 15px;
+  margin: auto 36px;
+  
 }
 
 .menu{
-    margin-left: 2vw;
-    font-size: 2.2vh;
+  list-style: none;
+  display: flex;
+  margin: auto;
+  width: 100vw;
 }
 
-a{
-    color: #000000;
-    text-decoration: none;
-} */
+.menu > .title-menu > a{
+  text-decoration: none;
+  color: black;
+  padding: 0 15px;
+}
+
+.menu > .title-menu > a:hover{
+  border-bottom: 2px solid var(--color-marrom-escuro);
+}
+
+.menu > .title-menu > a:active{
+  color: var(--color-marrom-claro);
+}
+
+.my-home{
+  border-bottom: 2px var(--color-marrom-escuro) solid;
+}
+
+.logoHeaderResp{
+  display: none;
+}
+
+.social-icons:hover{
+
+}
+
+.small-img{
+  margin: 2vh 2vw 2vh 1vw;
+  width: 2vw;
+}
+
+/* FIM DO MENU */
 
 .principais{
   margin-top: 5%;
@@ -99,28 +128,6 @@ a{
 .prato > a > p{
   text-align: center;
 }
-
-/* #maodevaca{
-  background-color: #ECCC74 !important; 
-}
-
-#galinha{
-  background-color: #fff5cc !important; 
-} */
-
-
-/* .amarelo-murcho{
-  background-color: #fff5cc;
-} */
-
-/* .burroqndfoge{
-  background-color: #ECCC74;
-} */
-
-
-/* section:nth-child(even).detalhes-dir{
-  background-color: ##fff5cc;
-} */
 
 .detalhes-esq{
   background-color: #ECCC74;
@@ -173,6 +180,18 @@ a{
 .detalhes-dir > #container > .title{
   margin-top: 5%;
 }
+
+.cardapio{
+  width: 100%;
+  height: 500px;
+  background-image: url("img/bg-cardapio.jpg");
+  margin: 20%;
+}
+
+
+
+
+
 
 
 
