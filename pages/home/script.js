@@ -6,19 +6,22 @@ const contatos = document.getElementById("contatos");
 
 
 
-// validação das páginas
+// validação das páginas : cada função retorna o caminho de cada página
 
+// Página de login
 
-login.addEventListener("click", () =>{
-    if(login.href == ""){
-        window.location.href = ""
+login.addEventListener("click", (e) =>{
+    if(login.href == "http://127.0.0.1:5500/pages/login/login.html"){
+        window.location.href = "http://127.0.0.1:5500/pages/login/login.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
     }
 })
 
-cardapio.addEventListener("click", () =>{
+// Página cardápio
+
+cardapio.addEventListener("click", (e) =>{
     if(cardapio.href == ""){
         window.location.href = ""
     } else{
@@ -27,7 +30,9 @@ cardapio.addEventListener("click", () =>{
     }
 })
 
-pratosPopulares.addEventListener("click", () =>{
+// Página pratos populares
+
+pratosPopulares.addEventListener("click", (e) =>{
     if(pratosPopulares.href == ""){
         window.location.href = ""
     } else{
@@ -36,16 +41,20 @@ pratosPopulares.addEventListener("click", () =>{
     }
 })
 
-reservas.addEventListener("click", () =>{
-    if(reservas.href == ""){
-        window.location.href = ""
+// Página de reservas
+
+reservas.addEventListener("click", (e) =>{
+    if(reservas.href == "http://127.0.0.1:5500/pages/reserva/reservas.html"){
+        window.location.href = "http://127.0.0.1:5500/pages/reserva/reservas.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
     }
 })
 
-contatos.addEventListener("click", () =>{
+// Página de contatos
+
+contatos.addEventListener("click", (e) =>{
     if(contatos.href == "http://127.0.0.1:5500/pages/Form%20contatos/contato/contatos.html"){
         window.location.href = "http://127.0.0.1:5500/pages/Form%20contatos/contato/contatos.html"
     } else{
@@ -57,7 +66,7 @@ contatos.addEventListener("click", () =>{
 
 
 
-// hover do menu
+// Hover do menu
 
 login.addEventListener("mouseover", () => {
     login.style.color = "#B47110"
