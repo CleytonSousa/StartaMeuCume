@@ -67,7 +67,6 @@ a{
     width: 80%;
 }
 
-
 .titulo{
     display: flex;
     border-bottom: 4px solid #B47110 ;
@@ -89,6 +88,23 @@ h2{
 .texto-principal{
     margin: 2vw;
     font-size: 26px;
+}
+
+#pratos-principais-imagens{
+    display: flex;
+    margin-left: 1.5vw;
+    margin-top: 2vh;
+}
+
+#pratos-esquerda, #pratos-direita{
+    height: 25vh;
+}
+
+.pratos-imagens{
+    width: 17vw;
+    height: 23vh;
+    margin: 1vw;
+    border-radius: 12px;
 }
 
 
@@ -288,6 +304,15 @@ span{
     h2{
         font-size: 2.8vw;
     }
+    #pratos-principais-imagens{
+        display: block;
+    }
+    #pratos-esquerda, #pratos-direita{
+        margin-left: 13vw;
+    }
+    .pratos-imagens{
+        width: 25vw;
+    }
 }
 
 @media (max-width: 800px){
@@ -353,6 +378,12 @@ span{
     }
     .logo-titulo{
         width: 8vw;
+    }
+    #pratos-esquerda, #pratos-direita{
+        margin-left: 8vw;
+    }
+    .pratos-imagens{
+        width: 30vw;
     }
 }
 
