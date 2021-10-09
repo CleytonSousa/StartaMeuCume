@@ -14,8 +14,7 @@
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: var(--color-marrom-escuro);
-    box-sizing: border-box;
-    
+    box-sizing: border-box;  
 }
 body {
     display: flex;
@@ -52,6 +51,9 @@ span {
 }
 .contactEmail {
     margin: 5%;
+}
+.more{
+    font-size: 1vw;
 }
 #siganos > h3 {
     margin: 5%;
@@ -98,6 +100,10 @@ span {
     height: 20vh;
     margin-bottom: 2vh;
     border-radius: 20px;
+    z-index: 1;
+}
+#section-header {
+    z-index: 2;
 }
 .contPhoto {
     display: flex;
@@ -159,18 +165,27 @@ span {
     transform: translateX(-50%);
     display: none;
     border-radius: 10px;
+    z-index: 4;
 }
 #nomeComida {
     margin: 2.5%;
     font-size: 35px;
     font-weight: bold;
 }
+#divBtn{
+    display: flex;
+    justify-content: right;
+}
 
 .closePop{
-    text-align: right;
+    background-color: inherit;
+    border: none;
     margin: 1%;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bold;    
+}
+.closePop:hover {
+    opacity: 50%;
 }
 #imgTest {
     width: 100vw;
@@ -188,69 +203,7 @@ span {
 }
 
 
-/*CONFIG DO NAVBAR E FOOTER THAYZA*/
-
-#section-header{
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 22vh;
-    background-color: #ECCC74;
-}
-
-#logomarca{
-    margin: 2vh;
-    width: 45vw;
-}
-
-nav{
-    margin-top: -11vh;
-    margin-left: 50vw;
-}
-
-.menu, ul, li{
-    display: inline;
-    list-style: none;
-}
-
-.menu{
-    margin-left: 1vw;
-    font-size: 3vh;
-}
-
-a{
-    color: #000000;
-    text-decoration: none;
-}
-footer{
-    padding: 0;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    background-color: #B47110;
-}
-
-#rodape{
-    padding: 3vh;
-    font-size: 1.5vh;
-}
-
-#section-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icones{
-    margin: 2vh 2vw 0.1vh 1vw;
-    width: 2vw;
-}
-
-
-/* responsividade Italo */
+/* responsividade */
 
 @media (max-width: 1360px){
     #main{
@@ -259,7 +212,6 @@ footer{
 }
 @media (max-width: 1200px){
     #infos {
-        flex-direction: column;
         text-align: center;
     }
     #imagemComida{
@@ -280,9 +232,19 @@ footer{
     #nomeComida{
         font-size: 30px;
     }
-.textCarda {
-    justify-content: center;
-}
+    .textCarda {
+        justify-content: center;
+    }
+    #imagemFic{
+        width: 120px;
+        height: 120px;
+    }
+    #infos {
+        flex-direction: column;
+    }
+    .popUp{
+        height: 60vh;
+    }
 }
 @media (max-width: 1000px){
     .photo {
@@ -298,9 +260,11 @@ footer{
         text-align: center;
         width: 100vw;
     }
+    .closePop {
+        width: 68vw;
+    }
     .popUp {
         width: 70vw;
-        height: 40vh;
     }
     .logoGlob{
         width: 40px;
@@ -321,10 +285,28 @@ footer{
         flex-direction: none;
     }
     .pratos {
-        font-size: 20px;
+        font-size: 2vw;
     }
     #nomeComida{
         font-size: 25px;
     }
+    #imgCont{
+        display: none;
+    }
+}
 
+@media (max-width: 600px){
+
+#comidas {
+    width: 95vw;
+}
+.photo{
+    display: none;
+    text-align: center;
+}
+.pratos {
+    border: 2px solid #502600;
+    border-radius: 10px;
+    width: 20vw;
+}
 }

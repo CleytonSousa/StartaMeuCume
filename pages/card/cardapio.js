@@ -35,20 +35,52 @@ negrito.addEventListener("mouseout", function(event) {
     event.target.style.fontWeight = "";
   }); // retirar mouse no link
 
-fotos.forEach(function(foto){
-    foto.addEventListener("click", ()=>{
-        pop.style.display = "block"
-        conteudo()
-})
-}); //aparecer popUp
+ //aparecer popUp
 
 fechar.addEventListener("click", () =>{
     pop.style.display = "none"
 }) //fechar popUp
 
+fotos.forEach(function(fo){
+    fo.addEventListener("mouseover", () => {
+        fo.style.opacity = "50%"        
+    })
+})
+fotos.forEach(function(fot){
+    fot.addEventListener("mouseout", () => {
+        fot.style.opacity = ""
+    })
+})
+
+fotos.forEach(function(foto){
+    foto.addEventListener("click", ()=>{
+        pop.style.display = "block"
+        conteudo()
+})
+});
+
+fotos.forEach(function(fotob){
+    fotob.addEventListener("click", ()=>{
+        conteudoB()
+})
+});
+
+fotos.forEach(function(fotoc){
+    fotoc.addEventListener("click", ()=>{
+        conteudoC()
+})
+});//pegar o id pra validação 
 
 selecionar.addEventListener("click", (e) => {
     conteudo(e.target.id)
+})
+
+selecionarDois.addEventListener("click", (e) => {
+    conteudoB(e.target.id)
+})
+
+selecionarTreis.addEventListener("click", (e) => {
+    conteudoC(e.target.id)
 })
 
 function conteudo(cont){
@@ -102,15 +134,6 @@ function conteudo(cont){
     } 
 } //setting da aba de comidas
 
-fotos.forEach(function(fotob){
-    fotob.addEventListener("click", ()=>{
-        conteudoB()
-})
-});
-
-selecionarDois.addEventListener("click", (e) => {
-    conteudoB(e.target.id)
-})
 
 function conteudoB(cont){
     valorB = cont
@@ -167,16 +190,6 @@ function conteudoB(cont){
         valores.style.fontWeight = "bold"
     }
 } //setting da aba de bebidas
-
-fotos.forEach(function(fotoc){
-    fotoc.addEventListener("click", ()=>{
-        conteudoC()
-})
-});
-
-selecionarTreis.addEventListener("click", (e) => {
-    conteudoC(e.target.id)
-})
 
 function conteudoC(cont){
     valorC = cont
