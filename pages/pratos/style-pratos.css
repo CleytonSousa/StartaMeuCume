@@ -10,77 +10,40 @@ body{
     /* background-color: #ECCC74; */
 }
 
+:root {
+  --color-marrom-claro: #B47110;
+  --color-marrom-escuro: #502600;
+  --color-bege: #ECCC74;
+  --color-bege-white: #FFEB99;   
+}
+
 #container{
   width: 80%;
   height: 100%;
   margin-left: 10%;
 }
 
-/* MENU  */
+/* CSS TESTE DE MENU BARBAHA */
 
-.nav-menu{
-  display: flex;
-  background: linear-gradient(to left, var(--color-marrom-claro), var(--color-bege));
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  border-bottom: var(--color-marrom-escuro) 1px solid;
-  background-color: #ECCC74;
-}
 
-header{
-  display: block;
-  position: fixed;
-  z-index: 5;
-  margin: 0;
-  padding: 0;
-}
 
-.nav-menu > img{
-  width: 40vw;
-  padding-bottom: 15px;
-  margin: auto 36px;
-  
-}
 
-.menu{
-  list-style: none;
-  display: flex;
-  margin: auto;
-  width: 100vw;
-}
 
-.menu > .title-menu > a{
-  text-decoration: none;
-  color: black;
-  padding: 0 15px;
-}
 
-.menu > .title-menu > a:hover{
-  border-bottom: 2px solid var(--color-marrom-escuro);
-}
 
-.menu > .title-menu > a:active{
-  color: var(--color-marrom-claro);
-}
 
-.my-home{
-  border-bottom: 2px var(--color-marrom-escuro) solid;
-}
 
-.logoHeaderResp{
-  display: none;
-}
 
-.social-icons:hover{
 
-}
 
-.small-img{
-  margin: 2vh 2vw 2vh 1vw;
-  width: 2vw;
-}
 
-/* FIM DO MENU */
+
+
+
+
+
+
+
 
 .principais{
   height: 250px;
@@ -193,7 +156,7 @@ header{
 
 
 
-
+/* CSS DO FOOTER */
 
 /****
 #section-icons{
