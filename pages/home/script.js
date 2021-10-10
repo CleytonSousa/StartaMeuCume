@@ -3,22 +3,28 @@ const cardapio = document.getElementById("cardapio");
 const pratosPopulares = document.getElementById("pratos-populares");
 const reservas = document.getElementById("reservas");
 const contatos = document.getElementById("contatos");
+const menuHover = document.querySelectorAll(".menu");
+const pratosImagens = document.querySelectorAll(".pratos-imagens");
 
 
 
-// validação das páginas
+// validação das páginas : cada função retorna o caminho de cada página
 
 
-login.addEventListener("click", () =>{
-    if(login.href == ""){
-        window.location.href = ""
+// Página de login
+
+login.addEventListener("click", (e) =>{
+    if(login.href == "http://127.0.0.1:5500/pages/login/login.html"){
+        window.location.href = "http://127.0.0.1:5500/pages/login/login.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
     }
 })
 
-cardapio.addEventListener("click", () =>{
+// Página cardápio
+
+cardapio.addEventListener("click", (e) =>{
     if(cardapio.href == ""){
         window.location.href = ""
     } else{
@@ -27,7 +33,9 @@ cardapio.addEventListener("click", () =>{
     }
 })
 
-pratosPopulares.addEventListener("click", () =>{
+// Página pratos populares
+
+pratosPopulares.addEventListener("click", (e) =>{
     if(pratosPopulares.href == ""){
         window.location.href = ""
     } else{
@@ -36,16 +44,20 @@ pratosPopulares.addEventListener("click", () =>{
     }
 })
 
-reservas.addEventListener("click", () =>{
-    if(reservas.href == ""){
-        window.location.href = ""
+// Página de reservas
+
+reservas.addEventListener("click", (e) =>{
+    if(reservas.href == "http://127.0.0.1:5500/pages/reserva/reservas.html"){
+        window.location.href = "http://127.0.0.1:5500/pages/reserva/reservas.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
     }
 })
 
-contatos.addEventListener("click", () =>{
+// Página de contatos
+
+contatos.addEventListener("click", (e) =>{
     if(contatos.href == "http://127.0.0.1:5500/pages/Form%20contatos/contato/contatos.html"){
         window.location.href = "http://127.0.0.1:5500/pages/Form%20contatos/contato/contatos.html"
     } else{
@@ -56,68 +68,54 @@ contatos.addEventListener("click", () =>{
 
 
 
-
-// hover do menu
-
-login.addEventListener("mouseover", () => {
-    login.style.color = "#B47110"
-    login.style.fontWeight = "bold"
-    login.style.borderBottom = "3px solid #B47110"
-} )
-
-login.addEventListener("mouseout", () => {
-    login.style.color = ""
-    login.style.fontWeight = ""
-    login.style.borderBottom = ""
-} )
+// Hover do menu
 
 
-cardapio.addEventListener("mouseover", () =>{
-    cardapio.style.color = "#B47110"
-    cardapio.style.fontWeight = "bold"
-    cardapio.style.borderBottom = "3px solid #B47110"
+menuHover.forEach(function(hover){
+    hover.addEventListener("mouseover", () =>{
+    hover.style.color = "#B47110"
+    hover.style.fontWeight = "bold"
+    hover.style.borderBottom = "3px solid #B47110"
+    })
 })
 
-cardapio.addEventListener("mouseout", () =>{
-    cardapio.style.color = ""
-    cardapio.style.fontWeight = ""
-    cardapio.style.borderBottom = ""
+menuHover.forEach(function(hover){
+    hover.addEventListener("mouseout", () =>{
+    hover.style.color = ""
+    hover.style.fontWeight = ""
+    hover.style.borderBottom = ""
+    })
 })
 
 
-pratosPopulares.addEventListener("mouseover", () =>{
-    pratosPopulares.style.color = "#B47110"
-    pratosPopulares.style.fontWeight = "bold"
-    pratosPopulares.style.borderBottom = "3px solid #B47110"
+
+// Opacidade nas imagens dos pratos
+
+
+pratosImagens.forEach(function(opacidade){
+    opacidade.addEventListener("mouseover", () => {
+        opacidade.style.opacity = "50%" 
+        opacidade.style.border = "3px solid #B47110"    
+    })
 })
 
-pratosPopulares.addEventListener("mouseout", () =>{
-    pratosPopulares.style.color = ""
-    pratosPopulares.style.fontWeight = ""
-    pratosPopulares.style.borderBottom = ""
+pratosImagens.forEach(function(opacidade){
+    opacidade.addEventListener("mouseout", () => {
+        opacidade.style.opacity = ""   
+        opacidade.style.border = ""     
+    })
 })
 
 
-reservas.addEventListener("mouseover", () =>{
-    reservas.style.color = "#B47110"
-    reservas.style.fontWeight = "bold"
-    reservas.style.borderBottom = "3px solid #B47110"
-})
+// Direcionar para pratos principais
 
-reservas.addEventListener("mouseout", () =>{
-    reservas.style.color = ""
-    reservas.style.fontWeight = ""
-    reservas.style.borderBottom = ""
-})
-
-contatos.addEventListener("mouseover", () =>{
-    contatos.style.color = "#B47110"
-    contatos.style.fontWeight = "bold"
-    contatos.style.borderBottom = "3px solid #B47110"
-})
-
-contatos.addEventListener("mouseout", () =>{
-    contatos.style.color = ""
-    contatos.style.fontWeight = ""
-    contatos.style.borderBottom = ""
+pratosImagens.forEache(function(direcionar){
+    direcionar.addEventListener("click", () =>{
+        if(pratosImagens.href == ""){
+            window.location.href = ""
+        } else{
+            alert("A página não foi encontrada. Entre em contato com o restaurante.")
+            direcionar.preventDefault();
+        }
+    })
 })
