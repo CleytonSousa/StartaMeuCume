@@ -6,17 +6,18 @@ body{
 }
 
 table, td, tr{
-    border: 2px solid rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
 }
 
 td{
     color: white;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 18px;
+    
 }
 
 table{
     text-align: center;
+    margin: auto;
 }
 
 
@@ -26,4 +27,8 @@ table{
         background-color: aliceblue;
     }
     
+    td{
+        color: black;
+    }
+
 }
