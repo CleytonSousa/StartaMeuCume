@@ -43,6 +43,7 @@ let regexNumber = /[a-zA-Z]/
     }
 
     else{
+        alert("Mensagem enviada!")
         window.location.reload(true)
     }
 }
