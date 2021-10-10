@@ -176,7 +176,6 @@ span {
     display: flex;
     justify-content: right;
 }
-
 .closePop{
     background-color: inherit;
     border: none;
@@ -290,11 +289,7 @@ span {
     #nomeComida{
         font-size: 25px;
     }
-    #imgCont{
-        display: none;
-    }
 }
-
 @media (max-width: 600px){
 
 #comidas {
@@ -308,5 +303,8 @@ span {
     border: 2px solid #502600;
     border-radius: 10px;
     width: 20vw;
+}
+#logomarca {
+    display: none;
 }
 }

@@ -44,44 +44,44 @@ fechar.addEventListener("click", () =>{
 fotos.forEach(function(fo){
     fo.addEventListener("mouseover", () => {
         fo.style.opacity = "50%"        
-    })
+    }) //opacidade na tela
 })
 fotos.forEach(function(fot){
     fot.addEventListener("mouseout", () => {
         fot.style.opacity = ""
     })
-})
+}) // retirar opacidade
 
 fotos.forEach(function(foto){
     foto.addEventListener("click", ()=>{
         pop.style.display = "block"
         conteudo()
 })
-});
+}); //mostrar popUP e adicionar conteudo 
 
 fotos.forEach(function(fotob){
     fotob.addEventListener("click", ()=>{
         conteudoB()
 })
-});
+}); //adicionar conteudo 
 
 fotos.forEach(function(fotoc){
     fotoc.addEventListener("click", ()=>{
         conteudoC()
 })
-});//pegar o id pra validação 
+});//adicionar conteudo 
 
 selecionar.addEventListener("click", (e) => {
     conteudo(e.target.id)
-})
+}) // pegar id do que eu clicar
 
 selecionarDois.addEventListener("click", (e) => {
     conteudoB(e.target.id)
-})
+}) //pegar id do que eu clicar
 
 selecionarTreis.addEventListener("click", (e) => {
     conteudoC(e.target.id)
-})
+})// pegar id do que eu clicar
 
 function conteudo(cont){
     valor = cont
