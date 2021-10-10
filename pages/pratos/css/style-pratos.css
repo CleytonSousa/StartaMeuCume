@@ -5,9 +5,8 @@
     padding: 0;
 }
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif !important;
     display: flexbox;
-    /* background-color: #ECCC74; */
 }
 
 :root {
@@ -27,14 +26,11 @@ body{
 
 /* CSS TESTE DE MENU BARBAHA */
 
-
-
 .navbar{
-    height: 140px;
-    font-family: 'Montserrat', sans-serif;
+    height: 110px;
     font-weight: 700;
-    color: #fff;
-    background: transparent;
+    color: #000;
+    background-color:#ECCC74;
     background-repeat: no-repeat;
     background-position: 70% 70%;
     -ms-background-size: cover;
@@ -54,8 +50,6 @@ body{
 
 .navbar.navbar-fixed-top.fixed-theme {
     background-color: #B47110;
-    border-color: #080808;
-    box-shadow: 0 0 5px rgba(0,0,0,.8);
 }
 
 .navbar-brand.fixed-theme {
@@ -93,7 +87,6 @@ body{
 
 .navbar-brand > img{
     width: 205px;
-    height: 120px;
 }
 
 .navbar.navbar-fixed-top.fixed-theme{
@@ -105,23 +98,6 @@ body{
     margin-top: 20px;
 }
 
-.fixed-theme > .navbar-collapse >
-.menu-nav > li > .tel{
-    color: transparent;
-}
-
-.fixed-theme > .collapse.in >
-.menu-nav > li > .tel{
-    color: #c3c3c3;
-}
-
-.fixed-theme > .navbar-collapse > .menu-nav > hr{
-    border-top: 1px solid transparent;
-}
-
-.fixed-theme > .collapse.in > .menu-nav > hr{
-    border-top: 1px solid #eee;
-}   
 
 .fixed-theme > .navbar-header > .navbar-brand{
     width: 125px;
@@ -132,58 +108,19 @@ body{
 
 .fixed-theme > .navbar-header > .navbar-brand > img{
     width: 125px;
-    height: 55px;
 }
 
 .collapse.in{
     height: 310px;
-    background-color: #182533;
-}
-
-.collapse.in > ul > li > .tel{
-    text-align: center;
+    background-color: #ECCC74;;
 }
 
 .collapse.in > ul{
     height: 250px;
 }
 
-.collapse.in > ul > hr{
-    margin-top: 0;
-    margin-bottom: 0;
-    border: 0;
-    border-top: 1px solid #eee;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
 .menu-nav{
     margin-top: 10px;
-}
-
-hr{
-    margin-top: 29px;
-    margin-bottom: 0;
-    border: 0;
-    border-top: 1px solid #6d7985;
-    padding-left: 90px;
-    width: 70%;
-}
-
-.nav > li > a.tel{
-    cursor: inherit;
-    text-align: right;
-    padding-right: 30px;
-}
-
-.nav > li > a.tel > i{
-    margin-right: 10px;
-}
-
-.nav > li > a.tel:hover{
-    color: #c3c3c3;
-    background-color: transparent;
 }
 
 .navbar-collapse > ul{
@@ -191,39 +128,26 @@ hr{
 }
 
 .nav > li > a{
-    color: #c3c3c3;
+    color: #000;
     font-size: 1.000em /* 16px */;
-    text-transform: uppercase;
+    padding: 10px 10px !important;
+    margin: 10px 28px;
 }
 
 .nav > li > a:hover{
     color: #fff;
-    background-color: transparent;
+    border-bottom: 3px solid #502600 !important;
+    background-color: transparent !important;
 }
 
 .navbar-collapse > .collapse .in{ 
     height: 250px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/******** FIM DO MENU **********/
 
 .principais{
-  height: 250px;
+  height: 530px;
   width: 100%;
   padding-top: 2%;
   background-color: #fff5cc;
@@ -240,6 +164,7 @@ hr{
   font-weight: 700;
   float: left;
   margin: 2% 0 5% 1%;
+  color: #000;
 }
 
 .prato{
@@ -261,6 +186,12 @@ hr{
   
 }
 
+.prato > a:hover{
+  color: #B47110;
+  text-decoration: none;
+  border-bottom: 2px solid #B47110;
+}
+
 .prato > a > img{
   width: 100%;
   height: 100%;
@@ -268,6 +199,7 @@ hr{
 
 .prato > a > p{
   text-align: center;
+  margin-top: 15px;
 }
 
 .detalhes-esq{
@@ -326,9 +258,31 @@ hr{
   width: 100%;
   height: 500px;
   background-image: url("img/bg-cardapio.jpg");
+  background-repeat: no-repeat;
+  background-position: 70% 70%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 
+
+
+/* footer{
+  text-align: center;
+  margin: 0 auto;
+  background-color: #B47110;
+  height: 15vh;
+  max-height: 150px;
+}
+
+footer i{
+  height: 30px;   
+  margin: 15px 0;
+  padding: 0 15px;
+} */
 
 
 
