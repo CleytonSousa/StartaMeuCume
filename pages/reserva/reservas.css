@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: var(--color-bege);
+    background-color: var(--color-bege-white);
 }
 
 body::-webkit-scrollbar {
@@ -72,6 +72,11 @@ header #menuIconClose {
     width: 50px;
 }
 
+#mobileButtons {
+    display: flex;
+    justify-content: center;
+}
+
 /* mobile */
 
 #navMobiel {
@@ -102,8 +107,12 @@ header #menuIconClose {
         display: none;
     }
 
-    #navMobiel {
+    #navMobiel ul {
         display: none;
+    }
+
+    #navMobiel {
+        background: none;
     }
 }
 
@@ -136,7 +145,7 @@ main {
 
     gap: 5rem;
 
-    height: 100vh;
+    height: 120vh;
 }
 
 form {
@@ -195,7 +204,26 @@ i {
 }
 
 footer {
-    margin-top: 2rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+
+    background: var(--color-marrom-claro);
+}
+
+footer img {
+    width: 50px;
+}
+
+footer div {
+    display: flex;
+    gap: 1rem;
 }
 
 footer p {
@@ -303,7 +331,7 @@ div#horario_almoco, div#horario_jantar {
 
 @media(max-width: 1024px){
     main {
-        height: 120vh;
+        height: 145vh;
         flex-direction: column;
         justify-content: flex-start;
 
@@ -320,6 +348,14 @@ div#horario_almoco, div#horario_jantar {
         display: grid;
         /* 4 columns de 70px */
         grid-template-columns: 80px 80px 80px;
+    }
+
+    footer img {
+        width: 30px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
 
