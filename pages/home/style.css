@@ -274,17 +274,16 @@ span{
     }
 }
 
-/* MENU DESCE */
+/* LOGOMARCA SAI */
 
 @media (max-width: 880px){
     #logomarca{
-        width: 65vw;
-        margin-left: 15vw;
+        display: none;
     }
     nav{
         width: 100%;
         margin-left: 10vw;
-        margin-top: -2vh;
+        margin-top: 9vh;
     }
     #section-header{
         height: 21vh;
@@ -343,6 +342,9 @@ span{
     #section-header{
         height: 18vh;
     }
+    nav{
+        margin-top: 8vh;
+    }
     #imagem-principal{
         margin-top: 18vh;
     }
@@ -352,11 +354,17 @@ span{
     h2{
         font-size: 4vw;
     }
+    #pratos-principais-imagens{
+        margin-left: 0vw;
+    }
 }
 
 @media (max-width: 600px){
     #section-header{
         height: 16.5vh;
+    }
+    nav{
+        margin-top: 6vh;
     }
     #imagem-principal{
         margin-top: 16.5vh;
@@ -398,8 +406,11 @@ span{
     }
     nav{
         width: 100%;
-        margin-top: -3vh;
-        margin-left: 9vw;
+        margin-top: 4vh;
+        margin-left: 4vw;
+    }
+    .menu{
+        font-size: 14px;
     }
     #imagem-principal{
         margin-top: 14vh;
@@ -411,7 +422,11 @@ span{
 
 @media (max-width: 375px){
     nav{
-        margin-top: -4vh;
+        margin-top: 4vh;
+        margin-left: 2vw;
+    }
+    .menu{
+        font-size: 12.5px;
     }
 }
 
@@ -422,7 +437,7 @@ span{
     nav{
         width: 100%;
         margin-left: 3.5vw;
-        margin-top: -5vh;
+        margin-top: 4vh;
     }
     .menu{
         font-size: 12px;
@@ -443,8 +458,11 @@ span{
         height: 14vh;
     }
     nav{
-        margin-left: 4.5vw;
-        margin-top: -5vh;
+        margin-left: 2.5vw;
+        margin-top: 4vh;
+    }
+    .menu{
+        font-size: 11px;
     }
     #imagem-principal{
         margin-top: 14.1vh;
