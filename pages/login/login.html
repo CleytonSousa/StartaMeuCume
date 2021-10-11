@@ -6,51 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link css - style, responsive and font/variables-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reponsive.css">,
+    <link rel="stylesheet" href="css/reponsive.css">
     <link rel="stylesheet" href="/global.css">
+    <link rel="stylesheet" href="/pages/home/style.css">
     <!-- link javascript -->
     <script type="text/javascript" src="javascript/script.js" defer></script>
     <!-- link icons - fontawsome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images Global/logo.svg" />
     <title>Login</title>
 </head>
 <body>
     <main id="container-principal">
         <!-- left -->
         <section id="container-left">
-            <img src="img/logo.svg" width="80%" alt="logo">
+            <img id="logo" src="../home/imagens/text_end_logo.svg" width="80%" alt="STARTA MEU CUMÊ">
         </section>
 
         <!-- right -->
         <section id="container-right">
-            
             <div id="container-formulario">
                 <form id="formulario">
+                    <h2 id="titulo"> Login </h2>
                     <div>
                         <div id="container-login">
                             <i class="fas fa-user"></i>
-                            <input type="email" id="login" placeholder="Login">
+                            <input type="email" id="emailLogin" placeholder="Email">
                         </div>
                         <div id="container-password">
                             <i class="fas fa-lock"></i>
-                            <input type="password" id="pass" placeholder="Senha">
+                            <input type="password" id="pass" placeholder="Senha (8 dígitos)">
                         </div>
-                        <p id="obs">  </p>
+                        <div id="alertas">
+                            <p id="preencha">
+                                <i id="icon-preencha" class="fas fa-exclamation-triangle"> </i> Preencha os campos necessários. 
+                            </p>
+                        </div>
                     </div>
-
-                    <div>
+                    <div id="botao-senha">
                         <br>
                         <button id="btnAcess" type="submit"> Acessar </button>
                         <br>
-                        <p id="esqueceuSenha">Esqueceu a senha? <a href="#">Clique aqui</a> </p>
-                        <span id=""></span>
+                        <p id="esqueceuSenha">Esqueceu a senha? <a id="cliqueAqui" href="#">Clique aqui</a> </p>
                     </div>
 
                 </form>
             </div>
         </section>
     </main>
-    <footer> <p> Camila Silva - Rede Cidadã </p> </footer>
+    
+    <footer>
+        <section id="section-icons">
+            <ul>
+                <li><a href="#"><img class="icones" src="../home/imagens/redes-sociais/facebook.png" alt="icon-facebook"></a></li>
+                <li><a href="#"><img class="icones" src="../home/imagens/redes-sociais/instagram.png" alt="icon-instagram"></a></li>
+                <li><a href="#"><img class="icones" src="../home/imagens/redes-sociais/telegram.png" alt="icon-telegram"></a></li>
+                <li><a href="#"><img class="icones" src="../home/imagens/redes-sociais/twitter.png" alt="icon-twitter"></a></li>
+                <li><a href="#"><img class="icones" src="../home/imagens/redes-sociais/whatsapp.png" alt="icon-whatsapp"></a></li>
+            </ul>
+        </section>
+        <section>
+            <p id = "rodape"> &#169; Desenvolvido por: Barbaha,<span> Camila</span>, Cleyton, Italo, Matheus e Thayza para START</p>
+        </section>
+    </footer>
+    <script src="../pages/home/script.js"></script>
+
+    <!-- pop-up entrar contato -->
+    <div id="fundo-popup-senha">
+        <div id="popup-senha">
+            <img class="imagem-chef" src="https://img.icons8.com/dotty/80/000000/chef-hat.png"/>
+            <p>
+                Para recuperar a senha, entre em contato com o restaurante. 
+            </p>
+            <p>
+                Clique no botão abaixo para ser redirecionade.
+            </p>
+            <div id="botoes-popup-senha">
+                <button id="btn-entrarContato" class="btn-popup">
+                    <a id="entrarContato" href="../FormContatos/contato/contatos.html">Entrar em contato</a>
+                </button>
+                <button id="btn-voltar" class="btn-popup">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- pop-up boas vindas -->
+    <div id="fundo-popup-boasvindas">
+        <div id="popup-boasvindas">
+            <img class="imagem-chef" src="https://img.icons8.com/dotty/80/000000/chef-hat.png"/>
+            <p>
+                Boas-vindas ao restaurante STARTA MEU CUMÊ!!
+            </p>
+            <p>
+                Clique no botão abaixo e será ser redirecionade para a página principal.
+            </p>
+            <button id="btn-home" class="btn-popup">
+                    <a id="entrarContato" href="../../index.html">Home</a>
+            </button>
+        </div>
+    </div>
+
 </body>
 </html>
+

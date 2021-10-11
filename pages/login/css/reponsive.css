@@ -1,16 +1,61 @@
 
-@media (min-width:300px) and (max-width:1800px){
+@media (min-width:100px) and (max-width:1800px){
     body{
         background-color: var(--color-bege);
     }
     #container-right{
        margin-top: 5vh;
     }
+    #container-left{
+        padding-left: 10%;
+    }
     #container-principal{
         display: flex;
         flex-direction: column;
-        
     }
-   
+    #alert{
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    /*  */
+    #popup-senha, #popup-boasvindas{
+        width: 60vw;
+    }
+    #btn-voltar{
+        margin-left: 20px;
+    }
+    #btn-entrarContato{
+        margin-right: 20px;
+    }
+    .btn-popup{
+        width: 25vw;
+        margin-top: 25px;
+    }
+ 
+}
+
+@media (min-width:400px) and (max-width:1100px) {
+    #container-formulario{
+        width: 300px;
+    }
     
+}
+
+@media (min-width:100px) and (max-width:400px) {
+    #titulo{
+        font-size: 20px;
+    }
+    #container-formulario{
+        width: 200px;
+    }
+    input, button{
+        font-size: 15px;
+    }
+   #esqueceuSenha{
+    font-size: 13px;
+   }
+   .btn-popup{
+    width: 20vw;
+    margin-top: 25px;
+}
 }
