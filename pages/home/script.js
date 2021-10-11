@@ -14,9 +14,9 @@ const pratosImagens = document.querySelectorAll(".pratos-imagens");
 // Página de login
 
 login.addEventListener("click", (e) =>{
-    if(login.href == "../pages/login/login.html"){
-        window.location.href = "../pages/login/login.html"
-    } else{
+    if(login.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/login/login.html"){
+        window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/login/login.html"
+    } else if(login.href != "https://cleytonsousa.github.io/StartaMeuCume/pages/login/login.html"){
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
     }
