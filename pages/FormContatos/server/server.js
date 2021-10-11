@@ -1,4 +1,4 @@
-let apiId = "123456789"
+let apiId = "589ed1d073a048c49906d8f313db3ad5"
 
 function fazPost(url, body){
     console.log("Body= ", body)
@@ -14,7 +14,7 @@ function fazPost(url, body){
 }
 
 function fazerContato(){
-    let url = `https://crudcrud.com/api/${apiId}/contatos`;
+    let url = `https://crudcrud.com/api/${apiId}/contato`;
 
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -71,7 +71,7 @@ function criarLinha(usuario){
 }
 
 function main(){
-    let data = fazGet(`https://crudcrud.com/api/${apiId}/contatos`);
+    let data = fazGet(`https://crudcrud.com/api/${apiId}/contato`);
     let usuarios = JSON.parse(data);
     let tabela = document.getElementById('tabela')
 

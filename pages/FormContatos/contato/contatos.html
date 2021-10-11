@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="stylesheet" href="./contatos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img class="logoHeader" src="../../../images Global/text_end_logo.svg" alt="logo">
+            <img class="logoHeaderResp" src="../../../images Global/logo.svg" alt="logo">
+            <ul>
+                <li><a href="../../card/cardapio.html">Cardápio</a></li>
+                <li><a href="../../pratos/pratosPrincipais.html">Pratos</a></li>
+                <li><a href="../../reserva/reservas.html">Reservas</a></li>
+                <li><a href="../../login/login.html">Login</a></li>
+                <li><a class="my-home" href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro animate__animated animate__backInDown">
+            <img class="logo animate__animated" src="../../../images Global/text_end_logo_break.svg" alt="">
+            <img class="logoResp animate__animated" src="../../../images Global/text_end_logo.svg" alt="">
+            <h1>Alguma duvida, elogio ou problema? <br> <span style="color: rgb(255, 0, 0);">entre em contato!</span></h1>
+            <h3>Fale conosco, estamos a total disposição!</h3>
+        </div>
+        <div class="getInfosUser animate__animated animate__fadeIn">
+            <h2>Entre Em Contato! <i class="fas fa-mobile-alt"></i></h2>
+            <form onsubmit="fazerContato()" method="dialog">
+                <div class="input-field">
+                    <input onblur="limparErroMsg()" type="text" name="name" id="name" minlength="2" placeholder="Digite seu nome"><br>
+                    <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgName"></span>
+                </div>
+    
+                <div class="input-field">
+                    <input onblur="limparErroMsg()" type="email" name="email" id="email" placeholder="Digite seu email">
+                    <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgEmail"></span>
+                </div>
+    
+                <div class="input-field">
+                    <input onblur="limparErroMsg()" type="" name="number" id="number" pattern="[0-9()-]{13}" placeholder="Numero (xx)xxxxxxxxx">
+                    <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgNumber"></span>
+                </div>
+    
+                <div class="input-field">
+                    <input onblur="limparErroMsg()" type="text" name="assunto" id="assunto" minlength="4" placeholder="Qual assunto do seu contato?">
+                    <div class="underline"></div>
+                    <span class="errorTroll" id="erroMsgAssunto"></span>
+                </div>
+    
+                <div class="textArea">
+                    <p>Mensagem <i class="far fa-paper-plane"></i></p>
+                    <textarea onfocus="limparErroMsg()" name="mensagem" id="mensagem" cols="30" rows="2" placeholder="Digite aqui sua mensagem"></textarea>
+                    <span class="errorTroll" id="erroMsgMensagem"></span>
+                </div>
+                <div class="input-field">
+                    <input class="animate__animated animate__backInLeft" id="send" type="submit" onclick="validarForm()" value="Enviar">
+                     <input class="animate__animated animate__backInRight" id="cleanBtn" type="button" value="Apagar tudo">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section class="social-icons">
+            <a href="#"><img class="small-img" src="../../home/imagens/redes-sociais/facebook.png" alt=""></i></a>
+            <a href="#"><img class="small-img" src="../../home/imagens/redes-sociais/instagram.png" alt=""></i></a>
+            <a href="#"><img class="small-img" src="../../home/imagens/redes-sociais/telegram.png" alt=""></i></a>
+            <a href="#"><img class="small-img" src="../../home/imagens/redes-sociais/twitter.png" alt=""></i></a>
+            <a href="#"><img class="small-img" src="../../home/imagens/redes-sociais/whatsapp.png" alt=""></i></a>
+        </section>
+        <p>Desenvolvido por Barbaha, Thayza, Matheus, <b>Cleyton</b>, Italo e Camila para START</p>
+    </footer>
+<script src="https://kit.fontawesome.com/2bb5085f08.js" crossorigin="anonymous"></script>
+<script src="../server/verificar.js"></script>
+<script src="../server/server.js"></script>
+</body>
+</html>

@@ -18,13 +18,13 @@ body{
     align-items: center;
 }
 
-/* #container-left{
-    
+#logo{
+    width: 85%;
 }
 
-#container-right{
-    
-} */
+#container-left{
+    padding-left: 110px;
+}
 
 #container-login, #container-password{
     display: flex;
@@ -35,24 +35,121 @@ body{
 }
 
 i{
-    width: 1.5vw;
+    width: 20px;
     color: var( --color-marrom-escuro);
 }
 
+#container-formulario{
+    width: 400px;
+    padding: 8%;
+    background: white;
+    box-shadow: 2px 2px 1px 1px var(--color-marrom-escuro);
+    border-radius: 5%;
+}
+#titulo{
+    color: var(--color-marrom-escuro);
+    text-align: center;
+    font-size: 30px;
+}
 input, button{
     background: none;
     border: none;
     outline: none;
     color: black;
     width: 100%;
-    font-size: 18px;
+    font-size: 25px;
     padding: 5px 0;
 }
 
 button{
     color: var(--color-bege-white);
     background-color: var(--color-marrom-escuro);
+    border-bottom: 0%;
 }
+
+/* hover btn */
+button:hover{
+    border-bottom: 100%;
+    transition: border-bottom 0.3s ease-in;
+    border-bottom: 5px solid var(--color-marrom-claro);
+    cursor: pointer;
+}
+
+/* Campos */
+#preencha{
+    margin-top: 10px;
+    padding: 5%;
+    border-radius: 10px;
+    line-height: 20px;
+    display: none;
+}
+#preencha{background-color: rgb(202, 126, 126);}
+
+
+#icon-boasvindas, #icon-preencha{
+    text-align: center;
+    width: 30px;
+    padding-top: 2px;
+}
+
+/*  */
+#esqueceuSenha{
+    margin-top: 4%;
+    cursor: help;
+    font-size: 20px;
+}
+
+#cliqueAqui{
+    cursor: pointer;
+}
+#cliqueAqui:hover{
+    color: var(--color-marrom-claro);
+    border-bottom: 2px solid var(--color-marrom-claro);
+}
+
+/* PopUp */
+#fundo-popup-senha, #fundo-popup-boasvindas{
+    height: 100vh; width: 100vw;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: fixed;
+    top: 0; left: 0;bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#popup-boasvindas{background-color: var(--color-bege-white);}
+#popup-senha{background-color: var(--color-bege-white);}
+
+#popup-senha, #popup-boasvindas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+#botoes-popup-senha{
+    display: flex;
+    flex-direction: row;
+}
+.imagem-chef{
+    height: 130px; width: 130px;
+}
+#entrarContato{
+    text-decoration: none;
+    color: var(--color-bege-white);
+}
+#btn-voltar{
+    margin-left: 30px;
+}
+#btn-entrarContato{
+    margin-right: 30px;
+}
+.btn-popup{
+    width: 300px; height: 50%;
+    margin-top: 25px;
+}
+
 
 footer{
     width: 100vw; 

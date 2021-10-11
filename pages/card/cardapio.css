@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --color-marrom-claro: #B47110;
+    --color-marrom-escuro: #502600;
+    --color-bege: #ECCC74;
+    --color-bege-white: #FFEB99;   
+}
+
+/* color */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-marrom-escuro);
+    box-sizing: border-box;  
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var( --color-bege-white);
+}
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(-color-marrom-escuro);
+}
+form {
+    margin: 1%;
+}
+span {
+    font-weight: bold;
+}
+
+/* globais */
+
+#main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
+}
+.icon {
+    margin-top: 5vh;
+}
+#siganos {
+    display: flex;
+    justify-content: space-around;
+}
+.contactEmail {
+    margin: 5%;
+}
+.more{
+    font-size: 1vw;
+}
+#siganos > h3 {
+    margin: 5%;
+}
+#comidas {
+   display: flex;
+   flex-direction: column;
+   width: 85vw;
+   margin: 0 auto;
+}
+.hPratos{
+    font-size: 30px;
+    text-align: left;
+}
+.card{
+    margin: 2%;
+    background-color: var( --color-bege-white);   
+}
+.imgComida{
+    width: 320px;
+    height: 250px;
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+}
+.itensCard {
+    display: flex;
+    justify-content: space-between;
+}
+.contPratos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+.pratos {
+    font-size: 24px;
+    margin-bottom: 0.5vh;
+    font-weight: bold;
+    width: 15vw;
+}
+.photo {
+    width: 15vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+    border-radius: 20px;
+    z-index: 1;
+}
+#section-header {
+    z-index: 2;
+}
+.contPhoto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.textCard {
+    display: flex;
+    margin-left: 3vw;
+    justify-content: center;
+}
+.textCarda {
+    display: flex;
+    margin-bottom: 4vh;
+}
+.textCarda h2{
+    padding: 1.5%;
+    margin-bottom: 1%;
+}
+.textCard h1{
+    padding: 1.5%;
+    font-size: 35px;
+}
+.logoGlob {
+    width: 60px;
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/* detalhes popup js */
+
+#infos {
+    display: flex;
+    justify-content: space-around;
+    width: 43vw;
+    margin: 0 auto; 
+}
+
+#imagemFic {
+    border-radius: 8px;
+    
+}
+#infosComida {
+    margin: 1%;
+}
+#infosComida p {
+    margin-bottom: 1.5vh;
+}
+
+/* POP UP*/
+.popUp {
+    width: 50vw;
+    height: 50vh;
+    background-color: #B47110;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    border-radius: 10px;
+    z-index: 4;
+}
+#nomeComida {
+    margin: 2.5%;
+    font-size: 35px;
+    font-weight: bold;
+}
+#divBtn{
+    display: flex;
+    justify-content: right;
+}
+.closePop{
+    background-color: inherit;
+    border: none;
+    margin: 1%;
+    font-size: 20px;
+    font-weight: bold;    
+}
+.closePop:hover {
+    opacity: 50%;
+}
+#imgTest {
+    width: 100vw;
+    margin-top: -3vh;
+    margin-bottom: 5vh;
+}
+.logoComida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+#imgCont {
+    width: 65px;
+}
+
+
+/* responsividade */
+
+@media (max-width: 1360px){
+    #main{
+        margin-top: 23vh;
+    }
+}
+@media (max-width: 1200px){
+    #infos {
+        text-align: center;
+    }
+    #imagemComida{
+        margin: 0 auto;
+    }
+    #imagemComida > img {
+        margin: 4%;
+    }
+    #imagemFic {
+        width: 200px;
+        height: 220px;
+    }
+}
+@media (max-width: 1100px){
+    #main{
+        margin-top: 18vh;
+    }
+    #nomeComida{
+        font-size: 30px;
+    }
+    .textCarda {
+        justify-content: center;
+    }
+    #imagemFic{
+        width: 120px;
+        height: 120px;
+    }
+    #infos {
+        flex-direction: column;
+    }
+    .popUp{
+        height: 60vh;
+    }
+}
+@media (max-width: 1000px){
+    .photo {
+        height: 15vh;
+        width: 18vw;
+    }
+}
+@media (max-width: 860px){
+    #siganos {
+        flex-direction: column;
+        justify-content: unset;
+        width: 100vw;
+        text-align: center;
+        width: 100vw;
+    }
+    .closePop {
+        width: 68vw;
+    }
+    .popUp {
+        width: 70vw;
+    }
+    .logoGlob{
+        width: 40px;
+    }
+    .textCard h1 {
+        font-size: 25px;
+    }
+    .textCarda h2 {
+        font-size: 22px;
+    }
+    .card {
+        text-align: center;
+    }
+    .pratos {
+        width: 18vw;
+    }
+    #comidas {
+        flex-direction: none;
+    }
+    .pratos {
+        font-size: 2vw;
+    }
+    #nomeComida{
+        font-size: 25px;
+    }
+}
+@media (max-width: 600px){
+
+#comidas {
+    width: 95vw;
+}
+.photo{
+    display: none;
+    text-align: center;
+}
+.pratos {
+    border: 2px solid #502600;
+    border-radius: 10px;
+    width: 20vw;
+}
+#logomarca {
+    display: none;
+}
+nav {
+    margin-top: 6vh;
+}
+}
