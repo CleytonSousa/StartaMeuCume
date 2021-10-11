@@ -144,7 +144,7 @@ body{
     height: 250px;
 }
 
-/******** FIM DO MENU **********/
+/******** INICIO PRATOS PRINCIPAIS **********/
 
 .principais{
   height: 530px;
@@ -202,12 +202,53 @@ body{
   margin-top: 15px;
 }
 
+@media screen and (max-width: 600px){
+
+  .principais{
+    height: 200vh;
+    width: 100%;
+  }
+
+  .title{
+    margin-top: 15vh;
+
+  }
+
+  .title > img{
+    width: 3em;
+    margin-right: 5px;
+  }
+  
+  .title > h1{
+    font-size: x-large;
+    margin-top: 10%;
+  }
+
+  .prato{
+    width: 80%;
+    margin-left: 5%;
+  }
+
+  .parasmart{
+    margin: 5%;
+    width: 80%;
+  }
+
+  .parasmart > li{
+    width: 90%;
+    text-align: center;
+  }
+
+}
+
+
+/******** SECTIONS DOS PRATOS **********/
+
 .detalhes-esq{
   background-color: #ECCC74;
   width: 100%;
   height: 40%;
   float: left;
-
 }
 
 .detalhes-dir{
@@ -254,23 +295,80 @@ body{
   margin-top: 5%;
 }
 
-.cardapio{
-  width: 100%;
-  height: 500px;
-  background-image: url("img/bg-cardapio.jpg");
-  background-repeat: no-repeat;
-  background-position: 70% 70%;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+@media screen and (max-width: 600px){
+  .det-smart{
+    padding-top: 10%;
+  }
+
+  .title-smart > img{
+    margin-top: 5%;
+  }
+
+  .cont-det-smart > img{
+    width: 80%;
+  }
+
+  .text-smart{
+    width: 80%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+
+
 }
 
 
 
+/******** INICIO CONHEÇA NOSSO CARDÁPIO **********/
+.cardapio{
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg-cardapio.jpg") !important;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
 
-/* footer{
+.title-card{
+  padding: 100px 150px;
+  text-align: center;
+}
+
+.title-card > img{
+  width: 3.75em;
+  margin-top: 90px;
+  float: left;
+}
+
+.title-card > h1{
+  font-weight: 700;
+  float: left;
+  margin: 15% 0 10% 1%;
+  color: #000;
+}
+
+.title-card > a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  padding: 30px 40px;
+  background-color: #502600;
+  border-radius: 5px;
+}
+
+.title-card > a:hover{
+  color: #502600;
+  background-color: #B47110;
+  text-decoration: none;
+  
+}
+
+
+
+/******** INICIO FOOTER **********/
+
+footer{
   text-align: center;
   margin: 0 auto;
   background-color: #B47110;
@@ -282,37 +380,5 @@ footer i{
   height: 30px;   
   margin: 15px 0;
   padding: 0 15px;
-} */
-
-
-
-
-/* CSS DO FOOTER */
-
-/****
-#section-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.icones{
-    margin: 2vh 2vw 0.1vh 1vw;
-    width: 3.5vw;
-}
-
-footer{
-    padding: 0;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    background-color: #B47110;
-}
-
-#rodape{
-    padding: 3vh;
-    font-size: 1.5vh;
-}
-
-****/
