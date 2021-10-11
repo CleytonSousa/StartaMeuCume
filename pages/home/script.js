@@ -14,8 +14,8 @@ const pratosImagens = document.querySelectorAll(".pratos-imagens");
 // Página de login
 
 login.addEventListener("click", (e) =>{
-    if(login.href == "../pages/login/login.html"){
-        window.location.href = "../pages/login/login.html"
+    if(login.href == "../StartaMeuCume/pages/login/login.html"){
+        window.location.href = "../StartaMeuCume/pages/login/login.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -25,8 +25,8 @@ login.addEventListener("click", (e) =>{
 // Página cardápio
 
 cardapio.addEventListener("click", (e) =>{
-    if(cardapio.href == "../pages/cardapio/cardapio.html"){
-        window.location.href = "../pages/cardapio/cardapio.html"
+    if(cardapio.href == "../StartaMeuCume/pages/card/cardapio.html"){
+        window.location.href = "../StartaMeuCume/pages/card/cardapio.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -36,8 +36,8 @@ cardapio.addEventListener("click", (e) =>{
 // Página pratos populares
 
 pratosPopulares.addEventListener("click", (e) =>{
-    if(pratosPopulares.href == "../pages/pratos/pratosPrincipais.html"){
-        window.location.href = "../pages/pratos/pratosPrincipais.html"
+    if(pratosPopulares.href == "../StartaMeuCume/pages/pratos/pratosPrincipais.html"){
+        window.location.href = "../StartaMeuCume/pages/pratos/pratosPrincipais.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -47,8 +47,8 @@ pratosPopulares.addEventListener("click", (e) =>{
 // Página de reservas
 
 reservas.addEventListener("click", (e) =>{
-    if(reservas.href == "../pages/reserva/reservas.html"){
-        window.location.href = "../pages/reserva/reservas.html"
+    if(reservas.href == "../StartaMeuCume/pages/reserva/reservas.html"){
+        window.location.href = "../StartaMeuCume/pages/reserva/reservas.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -58,8 +58,8 @@ reservas.addEventListener("click", (e) =>{
 // Página de contatos
 
 contatos.addEventListener("click", (e) =>{
-    if(contatos.href == "../pages/FormContatos/contato/contatos.html"){
-        window.location.href = "../pages/FormContatos/contato/contatos.html"
+    if(contatos.href == "../StartaMeuCume/pages/FormContatos/contato/contatos.html"){
+        window.location.href = "../StartaMeuCume/pages/FormContatos/contato/contatos.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
