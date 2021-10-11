@@ -177,7 +177,7 @@ function conteudoB(cont){
         valores.style.fontWeight = "bold"
     } else if (valorB == "imag7"){
         imgFic.setAttribute('src','../../pages/card/img/bebidas/carreiteiro.png')
-        imgFic.setAttribute('height', '300px')
+        imgFic.setAttribute('height','250px')
         document.getElementById('nomeComida').innerHTML = "Carreteiro"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
