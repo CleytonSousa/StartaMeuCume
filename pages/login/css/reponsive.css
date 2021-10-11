@@ -59,3 +59,9 @@
     margin-top: 25px;
 }
 }
+
+@media (min-width:600px){
+    #container-principal{
+        height: 150vh;
+    }
+}
