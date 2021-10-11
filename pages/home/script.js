@@ -109,7 +109,7 @@ pratosImagens.forEach(function(opacidade){
 
 // Direcionar para pratos principais
 
-pratosImagens.forEache(function(direcionar){
+pratosImagens.forEach(function(direcionar){
     direcionar.addEventListener("click", () =>{
         if(pratosImagens.href == ""){
             window.location.href = ""
