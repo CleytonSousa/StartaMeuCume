@@ -39,7 +39,6 @@ i{
     color: var( --color-marrom-escuro);
 }
 
-
 #container-formulario{
     width: 400px;
     padding: 8%;
@@ -102,6 +101,10 @@ button:hover{
 
 #cliqueAqui{
     cursor: pointer;
+}
+#cliqueAqui:hover{
+    color: var(--color-marrom-claro);
+    border-bottom: 2px solid var(--color-marrom-claro);
 }
 
 /* PopUp */
