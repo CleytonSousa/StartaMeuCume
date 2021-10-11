@@ -44,49 +44,49 @@ fechar.addEventListener("click", () =>{
 fotos.forEach(function(fo){
     fo.addEventListener("mouseover", () => {
         fo.style.opacity = "50%"        
-    })
+    }) //opacidade na tela
 })
 fotos.forEach(function(fot){
     fot.addEventListener("mouseout", () => {
         fot.style.opacity = ""
     })
-})
+}) // retirar opacidade
 
 fotos.forEach(function(foto){
     foto.addEventListener("click", ()=>{
         pop.style.display = "block"
         conteudo()
 })
-});
+}); //mostrar popUP e adicionar conteudo 
 
 fotos.forEach(function(fotob){
     fotob.addEventListener("click", ()=>{
         conteudoB()
 })
-});
+}); //adicionar conteudo 
 
 fotos.forEach(function(fotoc){
     fotoc.addEventListener("click", ()=>{
         conteudoC()
 })
-});//pegar o id pra validação 
+});//adicionar conteudo 
 
 selecionar.addEventListener("click", (e) => {
     conteudo(e.target.id)
-})
+}) // pegar id do que eu clicar
 
 selecionarDois.addEventListener("click", (e) => {
     conteudoB(e.target.id)
-})
+}) //pegar id do que eu clicar
 
 selecionarTreis.addEventListener("click", (e) => {
     conteudoC(e.target.id)
-})
+})// pegar id do que eu clicar
 
 function conteudo(cont){
     valor = cont
     if (valor == "imag0"){
-        imgFic.setAttribute('src','/pages/card/img/comidas/buchada-de-bode-receita-jeito-nordestino.png')
+        imgFic.setAttribute('src','../../pages/card/img/comidas/buchada-de-bode-receita-jeito-nordestino.png')
         document.getElementById('nomeComida').innerHTML = "Buchada de bode"
         document.getElementById('porcao').innerHTML = "500gm"
         document.getElementById('acomp1').innerText = "arroz"
@@ -97,7 +97,7 @@ function conteudo(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if (valor == "imag1"){
-        imgFic.setAttribute('src','/pages/card/img/comidas/sarapatel.png')
+        imgFic.setAttribute('src','../../pages/card/img/comidas/sarapatel.png')
         document.getElementById('nomeComida').innerHTML = "Sarapatel"
         document.getElementById('porcao').innerHTML = "600gm"
         document.getElementById('acomp1').innerText = "arroz refogado"
@@ -108,7 +108,7 @@ function conteudo(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     }  else if (valor == "imag2"){
-        imgFic.setAttribute('src','/pages/card/img/comidas/galinha-a-cabidela.png')
+        imgFic.setAttribute('src','../../pages/card/img/comidas/galinha-a-cabidela.png')
         document.getElementById('nomeComida').innerHTML = "Galinha cabidela"
         document.getElementById('porcao').innerHTML = "300gm"
         document.getElementById('acomp1').innerText = "arroz refogado"
@@ -119,7 +119,7 @@ function conteudo(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     }   else if (valor == "imag3"){
-        imgFic.setAttribute('src','/pages/card/img/comidas/maodevaca.png')
+        imgFic.setAttribute('src','../../pages/card/img/comidas/maodevaca.png')
         document.getElementById('nomeComida').innerHTML = "Mão de vaca"
         document.getElementById('porcao').innerHTML = "400gm"
         document.getElementById('acomp1').innerText = "arroz branco"
@@ -138,7 +138,7 @@ function conteudo(cont){
 function conteudoB(cont){
     valorB = cont
     if (valorB == "imag4"){
-        imgFic.setAttribute('src','/pages/card/img/bebidas/pitu.png')
+        imgFic.setAttribute('src','../../pages/card/img/bebidas/pitu.png')
         imgFic.setAttribute('height','250px')
         document.getElementById('nomeComida').innerHTML = "Pitu do amor"
         document.getElementById('acomp').innerText = ""
@@ -151,7 +151,7 @@ function conteudoB(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if(valorB == "imag5"){
-        imgFic.setAttribute('src','/pages/card/img/bebidas/acalcatrao.png')
+        imgFic.setAttribute('src','../../pages/card/img/bebidas/acalcatrao.png')
         document.getElementById('nomeComida').innerHTML = "Alcatrão puro"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -163,8 +163,8 @@ function conteudoB(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if (valorB == "imag6"){
-        imgFic.setAttribute('src','/pages/card/img/bebidas/mojito.png')
-        imgFic.setAttribute('height','250px')
+        imgFic.setAttribute('src','../../pages/card/img/bebidas/mojito.png')
+        imgFic.setAttribute('height','200px')
         document.getElementById('nomeComida').innerHTML = "Mojito"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -176,8 +176,8 @@ function conteudoB(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if (valorB == "imag7"){
-        imgFic.setAttribute('src','/pages/card/img/bebidas/carreiteiro.png')
-        imgFic.setAttribute('height', '300px')
+        imgFic.setAttribute('src','../../pages/card/img/bebidas/carreiteiro.png')
+        imgFic.setAttribute('height','200px')
         document.getElementById('nomeComida').innerHTML = "Carreteiro"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -194,7 +194,7 @@ function conteudoB(cont){
 function conteudoC(cont){
     valorC = cont
     if (valorC == "imag8"){
-        imgFic.setAttribute('src','/pages/card/img/sobremesas/bolo-de-rolo.png')
+        imgFic.setAttribute('src','../../pages/card/img/sobremesas/bolo-de-rolo.png')
         document.getElementById('nomeComida').innerHTML = "Bolo de rolo"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -206,7 +206,7 @@ function conteudoC(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if(valorC == "imag9"){
-        imgFic.setAttribute('src','/pages/card/img/sobremesas/cocada.png')
+        imgFic.setAttribute('src','../../pages/card/img/sobremesas/cocada.png')
         document.getElementById('nomeComida').innerHTML = "Cocada"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -218,7 +218,7 @@ function conteudoC(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if (valorC == "imag10"){
-        imgFic.setAttribute('src','/pages/card/img/sobremesas/munguza.png')
+        imgFic.setAttribute('src','../../pages/card/img/sobremesas/munguza.png')
         document.getElementById('nomeComida').innerHTML = "Munguza"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
@@ -230,7 +230,7 @@ function conteudoC(cont){
         valores.setAttribute("id","price")
         valores.style.fontWeight = "bold"
     } else if (valorC == "imag11"){
-        imgFic.setAttribute('src','/pages/card/img/sobremesas/cartola.png')
+        imgFic.setAttribute('src','../../pages/card/img/sobremesas/cartola.png')
         document.getElementById('nomeComida').innerHTML = "Cartola"
         document.getElementById('acomp').innerText = ""
         document.getElementById('acomp1').innerText = ""
