@@ -22,9 +22,7 @@ body{
   margin-left: 10%;
 }
 
-
-
-/* CSS TESTE DE MENU BARBAHA */
+/* CSS DE MENU BARBAHA */
 
 .navbar{
     height: 110px;
@@ -85,6 +83,7 @@ body{
     padding: 0;
 }
 
+
 .navbar-brand > img{
     width: 205px;
 }
@@ -97,7 +96,6 @@ body{
 .menu-nav{
     margin-top: 20px;
 }
-
 
 .fixed-theme > .navbar-header > .navbar-brand{
     width: 125px;
@@ -202,10 +200,12 @@ body{
   margin-top: 15px;
 }
 
+/* MENU PRATOS PRINCIPAIS PARA CELULAR */
+
 @media screen and (max-width: 600px){
 
   .principais{
-    height: 200vh;
+    height: 1350px;
     width: 100%;
   }
 
@@ -270,30 +270,30 @@ body{
 .cont-detalhes > img{
   width: 25%;
   margin-bottom: 5%;
-  margin-left: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .detalhes-esq > #container > .cont-detalhes > img{
   float: left;
+  margin-right: 10%;
 }
 
 .detalhes-esq > #container > .cont-detalhes > p{
-  width: 50%;
-  float: left;
   margin-left: 5%;
 }
 
 .detalhes-dir > #container > .cont-detalhes > img{
   float: right;
-}
-.detalhes-dir > #container > .cont-detalhes > p{
-  width: 50%;
-  float: right;
-  margin-left: 5%;
+
 }
 
 .detalhes-dir > #container > .title{
   margin-top: 5%;
 }
+
+
+
+/* SEÇÕES PRATOS PRINCIPAIS PARA CELULAR */
 
 @media screen and (max-width: 600px){
   .det-smart{
@@ -302,6 +302,10 @@ body{
 
   .title-smart > img{
     margin-top: 5%;
+  }
+
+  .cont-det-smart{
+    margin-bottom: 10%;
   }
 
   .cont-det-smart > img{
@@ -314,13 +318,10 @@ body{
     text-align: center;
   }
 
-
-
 }
 
-
-
 /******** INICIO CONHEÇA NOSSO CARDÁPIO **********/
+
 .cardapio{
   width: 100%;
   height: auto;
@@ -364,6 +365,37 @@ body{
   
 }
 
+
+@media screen and (max-width: 600px){
+  .cardapio{
+    background-image: url(../img/bg-cardapio-smart.jpg) !important;
+  }
+
+  .title-card{
+    padding: 80vh 0vw;
+    height: max-content;
+
+  }
+
+  .btn-smart{
+    float: left;
+    margin-left: 20%;
+    margin-bottom: 15%;
+  }
+
+  .title-card > img{
+    margin-left: 44%;
+  }
+
+  .tintle-card > h1{
+    margin: 10% 0 5% 0;
+  }
+
+  footer{
+    float: left;
+    margin-bottom: 0;
+  }
+}
 
 
 /******** INICIO FOOTER **********/
