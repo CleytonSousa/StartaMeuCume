@@ -307,4 +307,7 @@ span {
 #logomarca {
     display: none;
 }
+nav {
+    margin-top: 6vh;
+}
 }
