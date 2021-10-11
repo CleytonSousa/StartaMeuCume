@@ -18,13 +18,13 @@ body{
     align-items: center;
 }
 
+#logo{
+    width: 80%;
+}
+
 #container-left{
     padding-left: 110px;
 }
-
-/*#container-right{
-    
-} */
 
 #container-login, #container-password{
     display: flex;
