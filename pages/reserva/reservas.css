@@ -38,6 +38,10 @@ header {
     border-bottom: 5px solid var(--color-marrom-claro);
 }
 
+header picture a {
+    text-decoration: none;
+}
+
 header nav {
     display: flex;
     justify-content: center;
