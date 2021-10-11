@@ -111,8 +111,8 @@ pratosImagens.forEach(function(opacidade){
 
 pratosImagens.forEach(function(direcionar){
     direcionar.addEventListener("click", () =>{
-        if(pratosImagens.href == ""){
-            window.location.href = ""
+        if(pratosImagens.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/pratos/pratosPrincipais.html"){
+            window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/pratos/pratosPrincipais.html"
         } else{
             alert("A página não foi encontrada. Entre em contato com o restaurante.")
             direcionar.preventDefault();
