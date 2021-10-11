@@ -58,8 +58,8 @@ reservas.addEventListener("click", (e) =>{
 // Página de contatos
 
 contatos.addEventListener("click", (e) =>{
-    if(contatos.href == "../../pages/Form contatos/contato/contatos.html"){
-        window.location.href = "../../pages/Form contatos/contato/contatos.html"
+    if(contatos.href == "../../pages/FormContatos/contato/contatos.html"){
+        window.location.href = "../../pages/FormContatos/contato/contatos.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
