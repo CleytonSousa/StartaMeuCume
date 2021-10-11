@@ -11,17 +11,17 @@ const imgFic = document.getElementById("imagemFic")
 
 
 
-border.forEach(function(border){
-    border.addEventListener("mouseover", () => {
-        border.style.borderBottom = "3px solid #B47110";
-        border.style.fontStyle = "italic";
+border.forEach(function(e){
+    e.addEventListener("mouseover", () => {
+        e.style.borderBottom = "3px solid #B47110";
+        e.style.fontStyle = "italic";
     } )
 }) // passar mouse nos pratos
 
-border.forEach(function(border){
-    border.addEventListener("mouseout", () => {
-        border.style.borderBottom = "";
-        border.style.fontStyle = ""
+border.forEach(function(a){
+    a.addEventListener("mouseout", () => {
+        a.style.borderBottom = "";
+        a.style.fontStyle = ""
     } )
 }) // retirar mouse pratos
 
