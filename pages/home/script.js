@@ -19,14 +19,16 @@ login.addEventListener("click", (e) =>{
     } else if(login.href != "https://cleytonsousa.github.io/StartaMeuCume/pages/login/login.html"){
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
+    } else {
+      console.log("que que isso bicho?")
     }
 })
 
 // Página cardápio
 
 cardapio.addEventListener("click", (e) =>{
-    if(cardapio.href == "../pages/cardapio/cardapio.html"){
-        window.location.href = "../pages/cardapio/cardapio.html"
+    if(cardapio.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/card/cardapio.html"){
+        window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/card/cardapio.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -36,8 +38,8 @@ cardapio.addEventListener("click", (e) =>{
 // Página pratos populares
 
 pratosPopulares.addEventListener("click", (e) =>{
-    if(pratosPopulares.href == "../pages/pratos/pratosPrincipais.html"){
-        window.location.href = "../pages/pratos/pratosPrincipais.html"
+    if(pratosPopulares.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/pratos/pratosPrincipais.html"){
+        window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/pratos/pratosPrincipais.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -47,8 +49,8 @@ pratosPopulares.addEventListener("click", (e) =>{
 // Página de reservas
 
 reservas.addEventListener("click", (e) =>{
-    if(reservas.href == "../pages/reserva/reservas.html"){
-        window.location.href = "../pages/reserva/reservas.html"
+    if(reservas.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/reserva/reservas.html"){
+        window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/reserva/reservas.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
@@ -58,8 +60,8 @@ reservas.addEventListener("click", (e) =>{
 // Página de contatos
 
 contatos.addEventListener("click", (e) =>{
-    if(contatos.href == "../pages/FormContatos/contato/contatos.html"){
-        window.location.href = "../pages/FormContatos/contato/contatos.html"
+    if(contatos.href == "https://cleytonsousa.github.io/StartaMeuCume/pages/FormContatos/contato/contatos.html"){
+        window.location.href = "https://cleytonsousa.github.io/StartaMeuCume/pages/FormContatos/contato/contatos.html"
     } else{
         alert("A página não foi encontrada. Entre em contato com o restaurante.")
         e.preventDefault();
