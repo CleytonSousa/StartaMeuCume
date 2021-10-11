@@ -60,7 +60,7 @@
 }
 }
 
-@media (min-width:600px){
+@media (max-height:800px){
     #container-principal{
         height: 150vh;
     }
